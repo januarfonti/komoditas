@@ -16,6 +16,13 @@ $config['menu'] = array(
 		'icon'      => 'fa fa-home'
 	),
 
+	'berita' => array(
+		'name'      => lang('berita'),
+		'url'       => site_url('berita'),
+		'icon'      => 'fa fa-home'
+	),
+
+
 	// Example to add sections with subpages
 	'example' => array(
 		'name'      => lang('example'),

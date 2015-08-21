@@ -1,10 +1,11 @@
 <?php
 
-	$lang['website_name'] = "My Website";
+	$lang['website_name'] = "MOM - Sistem Informasi Komoditas";
 	$lang['website_copyright'] = "&copy; 2015 All rights reserved.";
 
 	// Menu
 	$lang['home'] = "Home";
+	$lang['berita'] = "Berita";
 	$lang['about_us'] = "About Us";
 	$lang['contact_us'] = "Contact Us";
 	$lang['example'] = "Example";
