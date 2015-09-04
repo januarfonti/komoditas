@@ -15,8 +15,8 @@ class Komoditas extends MY_Controller {
 		$crud->display_as('id_pasar','Pasar');
 		$crud->set_subject('Data Komoditas');
 		$crud->required_fields('id_bahanpokok','id_jenisbahanpokok','id_pasar','satuan','tgl_update','harga');
-		$this->mTitle = "Data Komoditas";
-		$this->mViewFile = '_partial/crud';
+		$this->mTitle                 = "Data Komoditas";
+		$this->mViewFile              = '_partial/crud';
 		$this->mViewData['crud_data'] = $crud->render();
 	}
 }

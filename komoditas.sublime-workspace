@@ -4,8 +4,104 @@
 		"selected_items":
 		[
 			[
+				"data",
+				"data_pasar"
+			],
+			[
+				"tgl",
+				"tgl_awal"
+			],
+			[
+				"tgl_",
+				"tgl_akhir"
+			],
+			[
+				"tg",
+				"tgl_awal"
+			],
+			[
+				"date",
+				"datepicker"
+			],
+			[
+				"wee",
+				"week_of_today"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"id",
+				"id_jenisbahanpokok"
+			],
+			[
 				"id_",
-				"id_bahanpokok"
+				"id_pasar"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"base",
+				"base_url"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"fu",
+				"fullname"
+			],
+			[
+				"user",
+				"user_id"
 			],
 			[
 				"nama",
@@ -18,10 +114,6 @@
 			[
 				"sha",
 				"sha_password"
-			],
-			[
-				"fu",
-				"function"
 			],
 			[
 				"ac",
@@ -52,106 +144,44 @@
 	"buffers":
 	[
 		{
-			"file": "applications/frontend/config/menu.php",
+			"file": "applications/frontend/views/detail_bahanpokok.php",
 			"settings":
 			{
-				"buffer_size": 1165,
+				"buffer_size": 4812,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "applications/frontend/controllers/bahanpokok.php",
+			"settings":
+			{
+				"buffer_size": 1907,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "applications/backend/config/menu_admin.php",
+			"file": "applications/frontend/views/caritanggal_bahanpokok.php",
 			"settings":
 			{
-				"buffer_size": 2069,
-				"line_ending": "Unix"
+				"buffer_size": 4688,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "applications/backend/views/_layouts/default.php",
+			"contents": "Package Control Messages\n========================\n\nMaterial Theme:\n--------------\n\n  ___  ___      _            _       _       _____ _\n  |  \\/  |     | |          (_)     | |     |_   _| |\n  | .  . | __ _| |_ ___ _ __ _  __ _| |       | | | |__   ___ _ __ ___   ___\n  | |\\/| |/ _` | __/ _ \\ '__| |/ _` | |       | | | '_ \\ / _ \\ '_ ` _ \\ / _ \\\n  | |  | | (_| | ||  __/ |  | | (_| | |       | | | | | |  __/ | | | | |  __/\n  \\_|  |_/\\__,_|\\__\\___|_|  |_|\\__,_|_|       \\_/ |_| |_|\\___|_| |_| |_|\\___|\n  \n  Material Theme for Sublime Text 3\n  https://github.com/equinusocio/material-theme for more info\n  \n  ******************************************************************************\n  \n  \n  To activate this awesome theme, add in your current settings this code:\n  \n  {\n      \"theme\": \"Material-Theme.sublime-theme\",\n      \"color_scheme\": \"Packages/Material Theme/schemes/Material-Theme.tmTheme\",\n  }\n  \n  \n  MAKE SURE TO RESTART SUBLIME AFTER ACTIVATING THE THEME\n  ******************************************************************************\n  \n  \n  You can set the alternative darker version with this:\n  \n  {\n      \"theme\": \"Material-Theme-Darker.sublime-theme\",\n      \"color_scheme\": \"Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme\",\n  \n  }\n  \n  ******************************************************************************\n  \n  \n  Recommended UI and font settings:\n  I suggest you to use this custom settings for a better experience with the theme:\n  \n  {\n      \"overlay_scroll_bars\": \"enabled\",\n      \"line_padding_top\": 3,\n      \"line_padding_bottom\": 3,\n      // On retina Mac\n      \"font_options\": [ \"gray_antialias\" ],\n      \"always_show_minimap_viewport\": true,\n      \"bold_folder_labels\": true,\n      // Highlight active indent\n      \"indent_guide_options\": [ \"draw_normal\", \"draw_active\" ]\n  }\n  \n  ******************************************************************************\n  \n  ",
 			"settings":
 			{
-				"buffer_size": 1008,
-				"line_ending": "Unix"
+				"buffer_size": 1918,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"scratch": true
 			}
 		},
 		{
-			"file": "applications/backend/views/_partial/header.php",
+			"file": "applications/frontend/models/komoditas_model.php",
 			"settings":
 			{
-				"buffer_size": 1171,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "applications/backend/controllers/pasar.php",
-			"settings":
-			{
-				"buffer_size": 781,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "applications/backend/controllers/jenis_bahanpokok.php",
-			"settings":
-			{
-				"buffer_size": 565,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "applications/backend/controllers/bahan_pokok.php",
-			"settings":
-			{
-				"buffer_size": 409,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "applications/backend/controllers/berita.php",
-			"settings":
-			{
-				"buffer_size": 432,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "applications/backend/controllers/komoditas.php",
-			"settings":
-			{
-				"buffer_size": 886,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "applications/backend/controllers/login.php",
-			"settings":
-			{
-				"buffer_size": 1054,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "applications/backend/controllers/home.php",
-			"settings":
-			{
-				"buffer_size": 199,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/xampp/htdocs/grocery/application/controllers/examples.php",
-			"settings":
-			{
-				"buffer_size": 6842,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "applications/backend/views/_partial/head.php",
-			"settings":
-			{
-				"buffer_size": 1019,
+				"buffer_size": 4623,
 				"line_ending": "Unix"
 			}
 		}
@@ -164,9 +194,13 @@
 	"command_palette":
 	{
 		"height": 400.0,
-		"last_filter": "push",
+		"last_filter": "Package Control: ",
 		"selected_items":
 		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
 			[
 				"push",
 				"Git: Push"
@@ -190,10 +224,6 @@
 			[
 				"gi",
 				"Git: Init"
-			],
-			[
-				"Package Control: ",
-				"Package Control: Remove Channel"
 			],
 			[
 				"pac",
@@ -233,116 +263,134 @@
 	],
 	"file_history":
 	[
-		"/C/xampp/htdocs/grocery/application/controllers/welcome.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/controllers/pasar.php",
-		"/C/xampp/htdocs/mom/application/views/wrapper_admin.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/config/config.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/config/database.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/config/database.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/controllers/admin.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/controllers/user.php",
-		"/C/Users/janua/Desktop/db_mom.sql",
-		"/C/xampp/htdocs/komoditas/applications/backend/controllers/berita.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/config/grocery_crud.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/views/_partial/crud.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/views/_partial/menu.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/views/home.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/config/production/database.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/config/crud.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/config/menu_admin.php",
-		"/C/xampp/htdocs/kuliahbersama/.htaccess",
-		"/C/Users/janua/AppData/Local/Temp/scp30488/home/belajar/release/application/views/auth/login.php",
-		"/C/xampp/htdocs/grocery/application/controllers/examples.php",
-		"/C/xampp/htdocs/member-luminox-master/application/controllers/member.php",
-		"/C/Users/janua/AppData/Local/Temp/scp04165/home/belajar/release/assets/jf/css/style-login.css",
-		"/C/xampp/htdocs/fullPagejs/examples/scrollBar.html",
-		"/C/xampp/htdocs/komoditas/applications/backend/views/_layouts/default.php",
-		"/C/xampp/htdocs/mom/application/views/admin/data_komoditas.php",
-		"/C/xampp/htdocs/mom/application/views/admin/data_user.php",
-		"/C/xampp/htdocs/mom/application/models/m_auth.php",
-		"/C/xampp/htdocs/mom/application/models/m_admin.php",
-		"/C/xampp/htdocs/mom/application/controllers/admin.php",
-		"/C/xampp/htdocs/member-luminox-master/application/controllers/admin.php",
-		"/C/xampp/htdocs/mom/application/controllers/examples.php",
-		"/C/xampp/htdocs/mom/application/views/example.php",
-		"/C/xampp/htdocs/mom/application/views/admin/tambah_pasar.php",
-		"/C/Users/janua/AppData/Local/Temp/scp36378/home/belajar/release/application/views/admin/tambah_matkul.php",
-		"/C/xampp/htdocs/mom/application/views/admin/detail_user.php",
-		"/C/xampp/htdocs/mom/application/controllers/auth.php",
-		"/C/Users/janua/Desktop/tbl_berita.sql",
-		"/C/xampp/htdocs/komoditas/applications/backend/controllers/home.php",
-		"/C/Users/janua/AppData/Local/Temp/scp18636/home/belajar/release/application/controllers/admin.php",
-		"/C/xampp/htdocs/mom/application/views/admin/data_pasar.php",
-		"/C/xampp/htdocs/mom/application/config/autoload.php",
-		"/C/xampp/htdocs/mom/application/config/config.php",
-		"/C/xampp/htdocs/grocery/application/views/example.php",
-		"/C/Users/janua/AppData/Local/Temp/scp17636/home/belajar/release/application/controllers/auth.php",
-		"/C/xampp/htdocs/mom/application/config/database.php",
-		"/C/xampp/htdocs/grocery/application/config/database.php",
-		"/C/xampp/htdocs/mom/application/libraries/Grocery_CRUD.php",
-		"/C/Users/janua/AppData/Local/Temp/scp19721/home/belajar/release/application/controllers/dosen.php",
-		"/C/Users/janua/AppData/Local/Temp/scp15462/home/belajar/release/application/controllers/mahasiswa.php",
-		"/C/Users/janua/AppData/Local/Temp/scp10394/home/smuet/webservice/application/controllers/admin.php",
-		"/C/Users/janua/AppData/Local/Temp/scp14729/home/smuet/webservice/application/controllers/login.php",
-		"/C/Users/janua/AppData/Local/Temp/scp25341/home/smuet/webservice/application/models/model_user.php",
-		"/C/Users/janua/AppData/Local/Temp/scp19718/home/belajar/release/application/views/auth/form_register.php",
-		"/C/Users/janua/AppData/Local/Temp/scp25683/home/belajar/release/application/views/admin/tambah_instansi.php",
-		"/C/xampp/htdocs/sb-admin/index.html",
-		"/C/xampp/htdocs/sb-admin/pages/sidebar.html",
-		"/C/xampp/htdocs/sb-admin/pages/blank.html",
-		"/C/xampp/htdocs/mom/application/views/auth/login.php",
-		"/C/Users/janua/AppData/Local/Temp/scp35258/home/belajar/release/application/controllers/admin.php",
-		"/C/Users/janua/AppData/Local/Temp/scp19533/home/smuet/webservice/application/controllers/admin.php",
-		"/C/Users/janua/AppData/Local/Temp/scp18065/home/smuet/webservice/application/models/model_user.php",
-		"/C/Users/janua/AppData/Local/Temp/scp09162/home/smuet/webservice/application/controllers/login.php",
-		"/C/Users/janua/AppData/Local/Temp/scp34802/home/smuet/webservice/application/models/model_mk.php",
-		"/C/Users/janua/AppData/Local/Temp/scp27274/home/smuet/webservice/application/controllers/dosen.php",
-		"/C/Users/janua/AppData/Local/Temp/scp00069/home/belajar/release/application/controllers/auth.php",
-		"/C/Users/janua/AppData/Local/Temp/scp31947/home/belajar/release/application/views/admin/instansi.php",
-		"/C/Users/janua/AppData/Local/Temp/scp22770/home/smuet/webservice/application/config/autoload.php",
-		"/C/Users/janua/AppData/Local/Temp/scp18172/home/smuet/webservice/application/models/model_instansi.php",
-		"/C/xampp/htdocs/MOM/.htaccess",
-		"/C/wamp/www/MOM/application/config/config.php",
-		"/C/wamp/www/MOM/.htaccess",
-		"/C/xampp/php/php.ini",
-		"/C/xampp/apache/conf/httpd.conf",
-		"/C/xampp/htdocs/MOM/application/config/config.php",
-		"/D/xampp/htdocs/MOM/application/config/config.php",
-		"/C/xampp/htdocs/komoditas/application/config/config.php",
-		"/C/xampp/htdocs/komoditas/.htaccess",
-		"/C/xampp/htdocs/komoditas/application/controllers/auth.php",
-		"/D/xampp/htdocs/MOM/.htaccess",
-		"/C/wamp/www/MOM/application/controllers/Auth.php",
-		"/C/wamp/www/MOM/application/controllers/Welcome.php",
-		"/C/Program Files/PremiumSoft/Navicat Premium/license_file",
-		"/C/wamp/www/MOM/commit",
-		"/C/Users/janua/AppData/Local/Temp/scp11126/home/belajar/release/application/views/dosen/detail_jawaban_mahasiswa.php",
-		"/C/Users/janua/AppData/Local/Temp/scp39354/home/belajar/release/application/controllers/admin.php",
-		"/C/Users/janua/AppData/Local/Temp/scp40626/home/belajar/release/library/cosineSimilarity.php",
-		"/C/Users/janua/AppData/Local/Temp/scp44711/home/belajar/release/application/views/dosen/detail_jawaban_mahasiswa.php",
-		"/C/Users/janua/AppData/Local/Temp/scp44389/home/belajar/release/application/views/dosen/detail_jawaban_mahasiswa.php",
-		"/C/Users/janua/AppData/Local/Temp/scp46490/home/belajar/release/application/views/dosen/detail_jawaban_mahasiswa.php",
-		"/C/Users/janua/AppData/Local/Temp/scp01728/home/belajar/release/application/views/dosen/point_matkul.php",
-		"/C/Users/janua/AppData/Local/Temp/scp01300/home/belajar/release/application/views/dosen/detail_jawaban_mahasiswa.php",
-		"/C/Users/janua/AppData/Local/Temp/scp16336/home/belajar/release/application/views/dosen/detail_jawaban_mahasiswa.php",
-		"/C/Users/janua/AppData/Local/Temp/scp47230/home/belajar/release/application/views/dosen/detail_jawaban_mahasiswa.php",
-		"/C/Users/janua/Documents/rarreg.php",
-		"/C/Users/janua/AppData/Local/Temp/scp56132/home/belajar/public_html/application/controllers/admin.php",
-		"/C/Windows/System32/drivers/etc/hosts",
-		"/C/Users/janua/AppData/Local/Temp/scp18053/home/belajar/release/application/views/dosen/detail_jawaban_mahasiswa.php",
-		"/C/wamp/www/kuliahbersama/index.php",
-		"/C/Users/janua/AppData/Local/Temp/scp23898/home/belajar/public_html/application/controllers/dosen.php",
-		"/C/Users/janua/AppData/Local/Temp/scp30596/home/belajar/release/application/controllers/dosen.php",
-		"/C/Users/janua/AppData/Local/Temp/scp35749/home/belajar/release/application/controllers/dosen.php",
-		"/C/wamp/www/kuliahbersama/dist/css/style.css",
 		"/C/Users/janua/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/Users/janua/AppData/Roaming/Sublime Text 3/Packages/User/AlignTab.sublime-settings",
-		"/C/Users/janua/AppData/Local/Temp/scp37487/home/belajar/release/application/views/dosen/detail_jawaban_mahasiswa.php",
-		"/C/Users/janua/AppData/Local/Temp/scp43125/home/belajar/release/application/views/dosen/detail_jawaban_mahasiswa.php",
-		"/C/Users/janua/AppData/Local/Temp/scp43409/home/belajar/release/application/views/dosen/detail_jawaban_mahasiswa.php",
-		"/C/Users/janua/AppData/Local/Temp/scp43202/home/belajar/release/application/views/dosen/detail_jawaban_mahasiswa.php",
-		"/C/Users/janua/AppData/Local/Temp/scp47312/home/belajar/release/application/views/dosen/detail_jawaban_mahasiswa.php",
-		"/C/Users/janua/AppData/Local/Temp/scp59029/home/belajar/public_html/application/views/dosen/point_mahasiswa.php"
+		"/C/xampp/htdocs/komoditas/applications/backend/controllers/komoditas.php",
+		"/C/Users/janua/AppData/Local/Temp/scp59879/home/belajar/release/application/controllers/auth.php",
+		"/C/Users/janua/AppData/Local/Temp/scp05527/home/smuet/webservice/application/controllers/login.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/_partial/head.php",
+		"/C/xampp/htdocs/komoditas/assets/datepicker/jquery.datetimepicker.js",
+		"/C/xampp/htdocs/komoditas/assets/datepicker/jquery.datetimepicker.css",
+		"/C/Users/janua/AppData/Local/Temp/scp09511/home/belajar/release/application/views/dosen/description_baru.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/_partial/header.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/_layouts/default.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/_partial/menu.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/_partial/menu_right.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/detail_bahanpokok.php",
+		"/C/Users/janua/AppData/Local/Temp/scp59056/home/belajar/release/application/views/auth/login.php",
+		"/C/Users/janua/AppData/Local/Temp/scp05988/home/belajar/release/application/views/wrapper_dosen/content_wrapper_bs.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/config/config.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/config/menu_member.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/config/profiler.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/config.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/hooks.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/profiler.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/production/database.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/config/production/database.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/config/menu.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/views/home.php",
+		"/C/xampp/htdocs/komoditas/system/helpers/html_helper.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/autoload.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/config/autoload.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/controllers/home.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/controllers/account.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/views/account.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/controllers/admin.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/helpers/alert_helper.php",
+		"/C/xampp/htdocs/komoditas/system/helpers/inflector_helper.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/models/komoditas_model.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/controllers/bahanpokok.php",
+		"/C/Users/janua/AppData/Local/Temp/scp05707/home/belajar/release/application/views/wrapper_dosen/content_wrapper.php",
+		"/C/xampp/htdocs/komoditas/assets/datepicker/js/bootstrap-datepicker.js",
+		"/C/Users/janua/AppData/Local/Temp/scp07723/home/smuet/webservice/application/models/model_mk.php",
+		"/C/xampp/htdocs/skripsirani/perhitungan.php",
+		"/C/Users/janua/Dropbox/skripsi (1)/Program/skripsirani/perhitungan.php",
+		"/C/xampp/htdocs/highchart/examples/line-basic/index.htm",
+		"/C/xampp/htdocs/komoditas/assets/dist/style.css",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/home.php",
+		"/C/Users/janua/AppData/Local/Temp/scp48417/home/belajar/release/application/controllers/auth.php",
+		"/C/Users/janua/AppData/Local/Temp/scp48723/home/belajar/release/application/views/auth/form_register.php",
+		"/C/Users/janua/AppData/Local/Temp/scp09338/home/smuet/webservice/application/controllers/admin.php",
+		"/C/Users/janua/AppData/Local/Temp/scp54612/home/smuet/webservice/application/models/model_user.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/controllers/berita.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/berita.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/controllers/berita.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/models/user_model.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/controllers/detail_bahanpokok.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/_layouts/home.php",
+		"/C/Users/janua/AppData/Local/Temp/Rar$DIa0.267/owl.autoplay.js",
+		"/C/xampp/htdocs/komoditas/assets/owl-carousel/js/owl.carousel.min.js",
+		"/C/Users/janua/AppData/Local/Temp/scp50902/home/belajar/release/application/config/config.php",
+		"/C/Users/janua/AppData/Local/Temp/scp51977/home/belajar/betha/application/config/config.php",
+		"/C/Users/janua/AppData/Local/Temp/scp53277/home/belajar/betha/index.php",
+		"/C/Users/janua/AppData/Local/Temp/scp57748/home/belajar/release/.htaccess",
+		"/C/Users/janua/AppData/Local/Temp/scp58551/home/belajar/release/.psw",
+		"/C/xampp/htdocs/komoditas/assets/styles/frontend.css",
+		"/C/Users/janua/AppData/Local/Temp/scp06066/home/belajar/betha/application/controllers/admin.php",
+		"/C/xampp/htdocs/komoditas/assets/dist/app.min.css",
+		"/C/xampp/htdocs/komoditas/assets/dist/slider.css",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/_partial/foot.php",
+		"/C/Users/janua/AppData/Local/Temp/scp26818/home/smuet/webservice/application/models/model_mk.php",
+		"/C/xampp/htdocs/komoditas/assets/dist/app.min.js",
+		"/C/Users/janua/AppData/Local/Temp/scp02643/home/belajar/betha/application/views/admin/tambah_matkul.php",
+		"/C/Users/janua/AppData/Local/Temp/scp09682/home/smuet/webservice/application/models/model_instansi.php",
+		"/C/Users/janua/AppData/Local/Temp/scp17829/home/belajar/betha/application/views/admin/daftar_matakuliah.php",
+		"/C/Users/janua/AppData/Local/Temp/scp20851/home/belajar/betha/application/controllers/mahasiswa.php",
+		"/C/Users/janua/AppData/Local/Temp/scp24715/home/smuet/webservice/application/controllers/mahasiswa.php",
+		"/C/Users/janua/AppData/Local/Temp/scp20516/home/belajar/betha/application/controllers/dosen.php",
+		"/C/Users/janua/AppData/Local/Temp/scp53719/home/belajar/betha/application/views/auth/login-backup.php",
+		"/C/Users/janua/AppData/Local/Temp/scp38164/home/belajar/betha/application/views/depan/daftar_kampus.php",
+		"/C/Users/janua/AppData/Local/Temp/scp19525/home/belajar/betha/application/views/depan/daftar_kelas.php",
+		"/C/Users/janua/AppData/Local/Temp/scp37517/home/belajar/betha/application/controllers/kelas.php",
+		"/C/Users/janua/AppData/Local/Temp/scp12409/home/belajar/betha/application/views/depan/wrapper.php",
+		"/C/Users/janua/AppData/Local/Temp/scp27858/home/belajar/betha/assets/jf/css/style-login.css",
+		"/C/Users/janua/AppData/Local/Temp/scp53740/home/belajar/betha/application/views/auth/login-1.php",
+		"/C/Users/janua/AppData/Local/Temp/scp38277/home/belajar/betha/application/views/auth/form_register.php",
+		"/C/Users/janua/AppData/Local/Temp/scp39622/home/smuet/webservice/application/controllers/login.php",
+		"/C/Users/janua/AppData/Local/Temp/scp31664/home/belajar/betha/application/controllers/auth.php",
+		"/C/Users/janua/AppData/Local/Temp/scp19569/home/belajar/betha/application/views/dosen/jawaban_mahasiswa.php",
+		"/C/Users/janua/AppData/Local/Temp/scp18732/home/belajar/betha/application/views/admin/tambah_matkul.php",
+		"/C/Users/janua/AppData/Local/Temp/scp03641/home/smuet/webservice/application/models/model_matkul.php",
+		"/C/Users/janua/AppData/Local/Temp/scp03043/home/smuet/webservice/application/models/model_instansi.php",
+		"/C/Users/janua/AppData/Local/Temp/scp59052/home/smuet/webservice/application/controllers/admin.php",
+		"/C/Users/janua/AppData/Local/Temp/scp14787/home/belajar/betha/application/controllers/admin.php",
+		"/C/Users/janua/AppData/Local/Temp/scp28472/home/belajar/betha/application/controllers/faq.php",
+		"/C/Users/janua/AppData/Local/Temp/scp28072/home/belajar/betha/application/controllers/kampus.php",
+		"/C/Users/janua/AppData/Local/Temp/scp27682/home/belajar/betha/application/views/depan/faq.php",
+		"/C/Users/janua/AppData/Local/Temp/scp17807/home/belajar/betha/application/views/admin/tambah_instansi.php",
+		"/C/Users/janua/AppData/Local/Temp/scp10271/home/belajar/betha/application/views/admin/daftar_matakuliah.php",
+		"/C/Users/janua/AppData/Local/Temp/scp10470/home/belajar/betha/application/views/mahasiswa/challange_mahasiswa.php",
+		"/C/Users/janua/AppData/Local/Temp/scp36041/home/belajar/betha/application/views/admin/instansi.php",
+		"/C/Users/janua/AppData/Local/Temp/scp04151/home/belajar/betha/application/views/dosen/list_matkul_dosen.php",
+		"/C/Users/janua/AppData/Local/Temp/scp53753/home/smuet/webservice/application/models/model_depan.php",
+		"/C/Users/janua/AppData/Local/Temp/scp53485/home/smuet/webservice/application/config/autoload.php",
+		"/C/Users/janua/AppData/Local/Temp/scp50283/home/smuet/webservice/application/controllers/depan.php",
+		"/C/Users/janua/AppData/Local/Temp/scp12640/home/belajar/betha/application/views/auth/login.php",
+		"/C/Users/janua/AppData/Local/Temp/scp17028/home/belajar/betha/application/controllers/dosen.php",
+		"/C/Users/janua/AppData/Local/Temp/scp51377/home/belajar/betha/application/controllers/depan.php",
+		"/C/Users/janua/AppData/Local/Temp/scp47686/home/smuet/webservice/application/controllers/user.php",
+		"/C/Users/janua/AppData/Local/Temp/scp11518/home/belajar/betha/application/views/wrapper_dosen/content_wrapper_bs.php",
+		"/C/xampp/htdocs/komoditas/system/helpers/language_helper.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/menu_admin.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/views/_layouts/default.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/views/_partial/header.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/helpers/auth_helper.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/controllers/pasar.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/controllers/jenis_bahanpokok.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/controllers/bahan_pokok.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/views/_partial/footer.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/crud.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/controllers/home.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/language/en/general_lang.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/language/cn/general_lang.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/controllers/example.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/views/_partial/back.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/views/example/demo.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/controllers/example.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/controllers/account.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/models/berita_model.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/controllers/user.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/controllers/login.php",
+		"/C/xampp/htdocs/grocery/application/controllers/examples.php"
 	],
 	"find":
 	{
@@ -360,6 +408,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"reg",
+			"memb",
+			"reg",
+			"help",
+			"autoplay",
+			"daftar_matak",
+			"matku",
+			"instansi",
+			"login",
+			"jawaban_mahasiswa",
+			"member",
 			"upload",
 			"firstPage",
 			"register",
@@ -383,256 +442,54 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "applications/frontend/config/menu.php",
+					"file": "applications/frontend/views/detail_bahanpokok.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1165,
+						"buffer_size": 4812,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								508,
-								508
+								2750,
+								2750
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "applications/backend/config/menu_admin.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2069,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								835,
-								835
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 471.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "applications/backend/views/_layouts/default.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1008,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								304,
-								304
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "applications/backend/views/_partial/header.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1171,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								621,
-								630
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 1.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "applications/backend/controllers/pasar.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 781,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								300,
-								419
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "applications/backend/controllers/jenis_bahanpokok.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 565,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								458,
-								458
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "applications/backend/controllers/bahan_pokok.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 409,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								93,
-								93
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "applications/backend/controllers/berita.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 432,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								302,
-								302
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2168.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "applications/backend/controllers/komoditas.php",
+					"buffer": 1,
+					"file": "applications/frontend/controllers/bahanpokok.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 886,
+						"buffer_size": 1907,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								717,
-								717
+								1408,
+								1408
 							]
 						],
 						"settings":
@@ -641,125 +498,99 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 240.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "applications/backend/controllers/login.php",
+					"buffer": 2,
+					"file": "applications/frontend/views/caritanggal_bahanpokok.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1054,
+						"buffer_size": 4688,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								863,
-								863
+								4446,
+								4446
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
-						"translation.x": -0.0,
-						"translation.y": 268.0,
+						"translation.x": 0.0,
+						"translation.y": 1843.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "applications/backend/controllers/home.php",
+					"buffer": 3,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 199,
+						"buffer_size": 1918,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1479,
+								1828
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 409.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "applications/frontend/models/komoditas_model.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4623,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2541,
+								2541
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 577.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "/C/xampp/htdocs/grocery/application/controllers/examples.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6842,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1330,
-								1284
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 937.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "applications/backend/views/_partial/head.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1019,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								329,
-								329
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -818,6 +649,122 @@
 		"selected_items":
 		[
 			[
+				"cari",
+				"applications\\frontend\\views\\caritanggal_bahanpokok.php"
+			],
+			[
+				"bahan",
+				"applications\\frontend\\controllers\\bahanpokok.php"
+			],
+			[
+				"komo",
+				"applications\\frontend\\models\\komoditas_model.php"
+			],
+			[
+				"detai",
+				"applications\\frontend\\views\\detail_bahanpokok.php"
+			],
+			[
+				"detail",
+				"applications\\frontend\\views\\detail_bahanpokok.php"
+			],
+			[
+				"head",
+				"applications\\frontend\\views\\_partial\\head.php"
+			],
+			[
+				"header",
+				"applications\\frontend\\views\\_partial\\header.php"
+			],
+			[
+				"accou",
+				"applications\\backend\\views\\account.php"
+			],
+			[
+				"html",
+				"system\\helpers\\html_helper.php"
+			],
+			[
+				"home",
+				"applications\\backend\\controllers\\home.php"
+			],
+			[
+				"aut",
+				"applications\\frontend\\config\\autoload.php"
+			],
+			[
+				"autl",
+				"applications\\backend\\config\\autoload.php"
+			],
+			[
+				"bahanp",
+				"applications\\frontend\\controllers\\bahanpokok.php"
+			],
+			[
+				"berita",
+				"applications\\frontend\\views\\berita.php"
+			],
+			[
+				"beri",
+				"applications\\backend\\controllers\\berita.php"
+			],
+			[
+				"kam",
+				"C:\\Users\\janua\\AppData\\Local\\Temp\\scp38164\\home\\belajar\\betha\\application\\views\\depan\\daftar_kampus.php"
+			],
+			[
+				"depan",
+				"C:\\Users\\janua\\AppData\\Local\\Temp\\scp50283\\home\\smuet\\webservice\\application\\controllers\\depan.php"
+			],
+			[
+				"insta",
+				"C:\\Users\\janua\\AppData\\Local\\Temp\\scp36041\\home\\belajar\\betha\\application\\views\\admin\\instansi.php"
+			],
+			[
+				"model_ins",
+				"C:\\Users\\janua\\AppData\\Local\\Temp\\scp03043\\home\\smuet\\webservice\\application\\models\\model_instansi.php"
+			],
+			[
+				"model_de",
+				"C:\\Users\\janua\\AppData\\Local\\Temp\\scp53753\\home\\smuet\\webservice\\application\\models\\model_depan.php"
+			],
+			[
+				"kelas",
+				"C:\\Users\\janua\\AppData\\Local\\Temp\\scp19525\\home\\belajar\\betha\\application\\views\\depan\\daftar_kelas.php"
+			],
+			[
+				"berita_",
+				"applications\\frontend\\models\\berita_model.php"
+			],
+			[
+				"auto",
+				"applications\\frontend\\config\\autoload.php"
+			],
+			[
+				"menu",
+				"applications\\frontend\\config\\menu.php"
+			],
+			[
+				"lang",
+				"system\\helpers\\language_helper.php"
+			],
+			[
+				"con",
+				"applications\\backend\\config\\config.php"
+			],
+			[
+				"conf",
+				"applications\\frontend\\config\\config.php"
+			],
+			[
+				"footer",
+				"applications\\backend\\views\\_partial\\footer.php"
+			],
+			[
+				"auth",
+				"applications\\frontend\\helpers\\auth_helper.php"
+			],
+			[
 				"login",
 				"applications\\backend\\controllers\\login.php"
 			],
@@ -826,24 +773,12 @@
 				"applications\\backend\\controllers\\login.php"
 			],
 			[
-				"beri",
-				"applications\\backend\\controllers\\berita.php"
-			],
-			[
-				"menu",
-				"applications\\backend\\config\\menu_admin.php"
-			],
-			[
 				"pasar",
 				"applications\\backend\\controllers\\pasar.php"
 			],
 			[
 				"adm",
 				"applications\\backend\\config\\menu_admin.php"
-			],
-			[
-				"head",
-				"applications\\backend\\views\\_partial\\head.php"
 			],
 			[
 				"tamba",
@@ -860,22 +795,6 @@
 			[
 				"admin",
 				"application\\controllers\\admin.php"
-			],
-			[
-				"auto",
-				"application\\config\\autoload.php"
-			],
-			[
-				"aut",
-				"application\\controllers\\auth.php"
-			],
-			[
-				"con",
-				"application\\config\\config.php"
-			],
-			[
-				"auth",
-				"application\\controllers\\auth.php"
 			]
 		],
 		"width": 0.0

@@ -10,6 +10,20 @@
 	<title><?php echo lang('website_name'); ?> - {title}</title>
 	
 	<link href="<?php echo base_url('assets/dist/app.min.css'); ?>" rel="stylesheet">
+	<link href="<?php echo base_url('assets/owl-carousel/css/owl.carousel.css'); ?>" rel="stylesheet" >
+	<link href="<?php echo base_url('assets/owl-carousel/css/owl.theme.default.min.css'); ?>" rel="stylesheet" >
+	<link href="<?php echo base_url('assets/dist/style.css'); ?>" rel="stylesheet" >
+	<link href="<?php echo base_url('assets/datepicker/jquery.datetimepicker.css'); ?>" rel="stylesheet" >
+	
+
+	
+
+	<script src="<?php echo base_url('assets/dist/app.min.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/owl-carousel/js/owl.carousel.min.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/highchart/highcharts.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/highchart/themes/dark-unica.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/datepicker/jquery.datetimepicker.js'); ?>"></script>
+	
 	
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>

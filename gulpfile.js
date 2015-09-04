@@ -32,6 +32,7 @@ var paths = {
 			folders.bower + 'bootstrap/fonts/**',
 			folders.bower + 'font-awesome/fonts/**',
 			folders.bower + 'ionicons/fonts/**',
+			folders.bower + 'bootstrap-material-design/fonts/**',
 		],
 		scripts: [
 			//folders.bower + 'jquery-legacy/jquery.min.js',
@@ -46,14 +47,15 @@ var paths = {
 			folders.bower + 'jquery-legacy/dist/jquery.js',
 			folders.bower + 'jquery-migrate/jquery-migrate.js',
 			folders.bower + 'bootstrap/dist/js/bootstrap.min.js',
+			folders.bower + 'bootstrap-material-design/dist/js/material.min.js',
 
 			// (optional) custom scripts
 			folders.js + 'frontend.js',
 		],
 		css: [
 			// switch to other bootswatch theme here, or use default bootstrap theme
-			//folders.bower + 'bootstrap/dist/css/bootstrap.css',
-			folders.bower + 'bootswatch/darkly/bootstrap.css',
+			folders.bower + 'bootstrap/dist/css/bootstrap.min.css',
+			folders.bower + 'bootstrap-material-design/dist/css/material.css',
 			folders.bower + 'font-awesome/css/font-awesome.css',
 
 			// (optional) custom files
@@ -195,4 +197,4 @@ gulp.task('build', ['scripts', 'cssmin']);
 gulp.task('rebuild', ['clean', 'copy', 'images', 'build']);
 
 // Default tasks
-gulp.task('default', ['build', 'watch']);
+gulp.task('default', ['rebuild', 'watch']);

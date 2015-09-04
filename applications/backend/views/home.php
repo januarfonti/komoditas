@@ -15,6 +15,8 @@
 			<?php echo app_btn('sign-out', 'Logout', $url = 'account/logout'); ?>
 		<?php echo box_close(); ?>
 
+		
+
 	</div>
 
 	<?php if ($user['role']=='admin') { ?>

@@ -19,10 +19,10 @@ $config['menu'] = array(
 	'berita' => array(
 		'name'      => lang('berita'),
 		'url'       => site_url('berita'),
-		'icon'      => 'fa fa-home'
+		'icon'      => 'fa fa-newspaper-o'
 	),
 
-
+	/*
 	// Example to add sections with subpages
 	'example' => array(
 		'name'      => lang('example'),
@@ -34,9 +34,11 @@ $config['menu'] = array(
 			lang('example').'3'		=> site_url('example/demo/3'),
 		)
 	),
+	*/
 	// end of example
 );
 
+/*
 if (ENABLED_MEMBERSHIP)
 {
 	$config['menu']['signup'] = array(
@@ -51,3 +53,4 @@ if (ENABLED_MEMBERSHIP)
 		'icon'      => 'fa fa-sign-in',
 	);
 }
+*/
