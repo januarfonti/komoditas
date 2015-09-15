@@ -7,7 +7,7 @@ class Bahanpokok extends MY_Controller {
 		parent::__construct();
 		$this->load->model('Komoditas_model');
 	}
-	public function index($id)
+	public function index()
 	{
 		$this->mTitle                   = "Berita";
 		$this->mViewFile                = 'berita';
@@ -16,11 +16,12 @@ class Bahanpokok extends MY_Controller {
 
 	public function detail($id)
 	{
+		$this->mLayout                               = "home";
 		$this->mTitle                      = "Detail Bahan Pokok";
 		$this->mViewFile                   = 'detail_bahanpokok';
 		$this->mViewData['data_komoditas'] = $this->Komoditas_model->get_detailharga($id);
 		$this->mViewData['data_pasar']     = $this->Komoditas_model->get_pasar();
-		$this->mViewData['data_tanggal']   = $this->Komoditas_model->get_tanggal();
+		$this->mViewData['data_tanggal']   = $this->Komoditas_model->get_tanggal($id);
 		$this->mViewData['data_max']       = $this->Komoditas_model->get_max($id);
 		$this->mViewData['data_min']       = $this->Komoditas_model->get_min($id);
 		$this->mViewData['data_avg']       = $this->Komoditas_model->get_avg($id);

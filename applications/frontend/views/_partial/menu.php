@@ -1,5 +1,4 @@
-
-<ul class="nav navbar-nav">
+<ul class="nav navbar-nav navbar-center line-top line-pcolor case-c">
 <?php
 	foreach ($menu as $parent => $parent_params)
 	{
@@ -20,19 +19,38 @@
 			$parent_icon = $parent_params['icon'];
 			
 			// parent of child items
-			echo "<li class='dropdown $parent_active'>
+			echo "<li class='dropdown dropdown-mega $parent_active'>
 				<a data-toggle='dropdown' class='dropdown-toggle' href='#''>
 					<i class='$icon'></i> $parent_name <span class='caret'></span>
 				</a>";
 
 			// child items
-			echo "<ul role='menu' class='dropdown-menu'>";
-			foreach ($parent_params['children'] as $name => $url)
+			echo " <!-- Mega Menu -->
+                  <div class='mega-menu dropdown-menu'>
+                    <!-- Row -->
+                    <div class='row'>
+                    
+                      <!-- col -->
+                      <div class='col-md-3'>
+                        <img class='featured-img hidden-xs hidden-sm' src='".base_url()."assets/dist/images/grocery-pages.jpg' alt=''>
+                      </div>
+                      <!-- /col -->";
+            $data_pasar = $this->Komoditas_model->get_pasar();
+			foreach ($data_pasar as $row)
 			{
-				echo "<li><a href='$url'>$name</a></li>";
+			?>
+                      <div class='col-md-2'>
+                      <ul class='links'>
+                          <li><a href='<?php echo base_url('pasar/data/'.$row->id_pasar); ?>'><?php echo $row->nama_pasar; ?></a></li>
+                        </ul>
+                      </div>
+            <?php
 			}
-			echo "</ul>";
-			echo "</li>";
+
+			echo "</div>
+                    <!-- /Row -->
+                  </div>
+                  <!-- /Mega Menu -->";
 		}
 	}
 ?>

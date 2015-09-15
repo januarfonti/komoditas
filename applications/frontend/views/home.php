@@ -1,158 +1,239 @@
-<style type="text/css">
-	
-</style>
-
-<BR/>
-
-
-<div class="container well">
-	<div class="owl-carousel">
-    //Nanti you loop di sini Mon
-    	<div class="owl2row-item">
-    	
-        	<div class="item" style="margin-bottom: 10px;">
-        		<a href="#">
-            		<img class="img-rounded" src="https://aditinputria.files.wordpress.com/2013/03/sack-of-rice01_1.jpg" alt="">
-                	<span>Beras Medium, Rp.9.100/kg<br><b>Harga Naik</b></span>
-        		</a>
-        	</div>
-	        <div class="item">
-		        <a href="#">
-		            <img src="http://www.duajurai.com/wp-content/uploads/2014/10/dagingsapi.jpg" alt="">
-		            <span>Telur Ayam Ras, Rp.9.100/kg
-		            <br><b>Harga Turun</b></span>
-		        </a>
-	        </div>
-    </div>
-    //End Loop
-    //Nanti you loop di sini Mon
-    <div class="owl2row-item">
-        <div class="item" style="margin-bottom: 10px;">
-        <a href="#">
-            <img src="http://bibitbunga.com/wp-content/uploads/2013/09/cabe-red-habanero.jpg" alt="">
-            <span>Telur Ayam Ras, Rp.9.100/kg
-            <br><b>Harga Turun</b></span>
-        </a>
-        </div>
-        <div class="item">
-        <a href="#">
-            <img src="http://www.duajurai.com/wp-content/uploads/2014/10/dagingsapi.jpg" alt="">
-            <span>Telur Ayam Ras, Rp.9.100/kg
-            <br><b>Harga Turun</b></span>
-        </a>
-        </div>
-    </div>
-    //End Loop
-    //Nanti you loop di sini Mon
-    <div class="owl2row-item">
-        <div class="item" style="margin-bottom: 10px;">
-        <a href="#">
-            <img src="https://aditinputria.files.wordpress.com/2013/03/sack-of-rice01_1.jpg" alt="">
-            <span>Telur Ayam Ras, Rp.9.100/kg
-            <br><b>Harga Turun</b></span>
-        </a>
-        </div>
-        <div class="item">
-        <a href="#">
-            <img src="http://www.duajurai.com/wp-content/uploads/2014/10/dagingsapi.jpg" alt="">
-            <span>Telur Ayam Ras, Rp.9.100/kg
-            <br><b>Harga Turun</b></span>
-        </a>
-        </div>
-    </div>
-    //End Loop
-    //Nanti you loop di sini Mon
-    <div class="owl2row-item">
-        <div class="item" style="margin-bottom: 10px;">
-        <a href="#">
-            <img src="http://bibitbunga.com/wp-content/uploads/2013/09/cabe-red-habanero.jpg" alt="">
-            <span>Telur Ayam Ras, Rp.9.100/kg
-            <br><b>Harga Turun</b></span>
-        </a>
-        </div>
-        <div class="item">
-        <a href="#">
-            <img src="http://www.duajurai.com/wp-content/uploads/2014/10/dagingsapi.jpg" alt="">
-            <span>Telur Ayam Ras, Rp.9.100/kg
-            <br><b>Harga Turun</b></span>
-        </a>
-        </div>
-    </div>
-    //End Loop
-    //Nanti you loop di sini Mon
-    <div class="owl2row-item">
-        <div class="item" style="margin-bottom: 10px;">
-        <a href="#">
-            <img src="https://aditinputria.files.wordpress.com/2013/03/sack-of-rice01_1.jpg" alt="">
-            <span>Telur Ayam Ras, Rp.9.100/kg
-            <br><b>Harga Turun</b></span>
-        </a>
-        </div>
-        <div class="item">
-        <a href="#">
-            <img src="http://www.duajurai.com/wp-content/uploads/2014/10/dagingsapi.jpg" alt="">
-            <span>Telur Ayam Ras, Rp.9.100/kg
-            <br><b>Harga Turun</b></span>
-        </a>
-        </div>
-    </div>
-    //End Loop
-    //Nanti you loop di sini Mon
-    <div class="owl2row-item">
-        <div class="item" style="margin-bottom: 10px;">
-        <a href="#">
-            <img src="http://bibitbunga.com/wp-content/uploads/2013/09/cabe-red-habanero.jpg" alt="">
-            <span>Telur Ayam Ras, Rp.9.100/kg
-            <br><b>Harga Turun</b></span>
-        </a>
-        </div>
-        <div class="item">
-        <a href="#">
-            <img src="http://www.duajurai.com/wp-content/uploads/2014/10/dagingsapi.jpg" alt="">
-            <span>Telur Ayam Ras, Rp.9.100/kg
-            <br><b>Harga Turun</b></span>
-        </a>
-        </div>
-    </div>
-    //End Loop
-    //Nanti you loop di sini Mon
-   
-    
-    </div>
-
-</div>
-
-
 <?php
-
-
-    foreach($data_rataratahariini as $key => $val)
-    {
-        $val2 = $data_ratarataharikemarin[$key];
-        echo "<pre>";
-        echo $val->nama_jenis_bahan_pokok;
-        echo "<br/>";
-        echo $val->harga_ratarata;
-        echo "<br/>";
-        echo $val->foto_jenis_bahan_pokok;
-        echo "<br/>";
-        if ($val->harga_ratarata > $val2->harga_ratarata) {
-            echo "Harga Naik";
-        }
-        elseif ($val->harga_ratarata < $val2->harga_ratarata) {
-            echo "Harga Turun";
-        }
-        if ($val->harga_ratarata == $val2->harga_ratarata) {
-            echo "Harga Stabil";
-        }
-        echo "</pre>";
-    }
+function buatrp($angka)
+{
+    $jadi = "Rp " . number_format($angka,0,',','.');
+    return $jadi;
+}
 ?>
+
+        
+        <!-- Intro Block
+              ============================================-->
+              <section class="intro-block intro-page boxed-section cover-1-bg overlay-dark-m">
+              
+                <!-- Container -->
+                <div class="container">     
+                  <!-- Section Title -->
+                  <div class="section-title invert-colors no-margin-b">
+                    <h2>harga rata rata komoditas</h2>
+                    <p>Update terakhir tanggal <?php echo TanggalIndo($data_rataratahariini[0]->tgl_update); ?>, perbandingan dengan harga tanggal <?php echo TanggalIndo($data_ratarataharikemarin[0]->tgl_update); ?></p>
+                  </div>
+                  <!-- /Section Title -->
+                </div>
+
+                <!-- /Container -->
+              
+              </section><br/>
+              <!-- /Intro Block
+              ============================================-->
+
+      <!-- Intro Block
+      ============================================ -->
+      <div class="intro-block mgb-20">
+      
+        <!-- Container -->
+        <div class="container">
+
+          <!-- Slider Wrapper -->
+          <div class="intro-slider">
+          
+            <!-- OWL SLIDER -->
+
+            <div class="owl-carousel applications-list owl-theme owl-loaded">
+                <div class="owl-stage-outer">
+                <div class="owl-stage" style="transform: translate3d(-970px, 0px, 0px); transition: 0s; width: 3492px;">
+                <?php
+                foreach($data_rataratahariini as $key => $val)
+                {
+                    $val2 = $data_ratarataharikemarin[$key];
+                    if ($val->harga_ratarata > $val2->harga_ratarata)
+                    {
+                        $selisih = $val->harga_ratarata - $val2->harga_ratarata;
+                        $status  = "Harga Naik";
+                        $style   = "warna-naik";
+                        $icon = "<i class='fa fa-chevron-up'></i> ";
+                        
+                    }
+                    elseif ($val->harga_ratarata < $val2->harga_ratarata) {
+                        
+                        $selisih = $val2->harga_ratarata - $val->harga_ratarata;
+                        $status = "Harga Turun ";
+                        $style   = "warna-turun";
+                        $icon = "<i class='fa fa-chevron-down'></i> ";
+                        
+
+                    }
+                    elseif ($val->harga_ratarata = $val2->harga_ratarata) {
+                        $status = "Harga Stabil";
+                        $style   = "warna-stabil";
+                        $icon = "= ";
+                        
+                    }
+                ?>
+                    <div class="item">
+                        <a href="<?php echo base_url('bahanpokok/detail/'.$val->id_jenisbahanpokok); ?>">
+                            <span class="sp-nama <?php echo $style; ?>"><?php echo $val->nama_jenis_bahan_pokok; ?></span>
+                            <img style="min-width:100%; min-height:100%;" class="lazy img-responsive" src="<?php echo base_url('assets/uploads/'.$val->foto_jenis_bahan_pokok) ?>">
+                            <span class="sp-harga <?php echo $style; ?>"><?php echo buatrp($val->harga_ratarata)."/".$val->satuan; ?></span>
+                            <span class="sp-selisih <?php echo $style; ?>"><?php echo $icon."".$status." ".buatrp($selisih) ?></b></span>
+                        </a>
+                    </div>
+                    
+                    
+                    
+                <?php
+                }
+                ?>
+               
+               
+                </div>
+                </div>
+            </div>
+
+            <!-- /OWL SLIDER -->
+            
+          </div>
+          <!-- Slider Wrapper -->
+
+        </div>
+        <!-- /Container -->
+      
+      </div>
+      <!-- /Intro Block
+      ============================================ -->
+      
+      <!-- Content Block
+      ============================================ -->
+      <div class="content-block">
+      
+      </div>
+      
+       <!-- Content Block
+      ============================================-->
+      <section class="content-block default-bg">
+      
+        <!-- Container -->
+        <div class="container cont-pad-t-sm">
+
+          <!-- Row -->
+          <div class="row">
+
+            <!-- Main Col -->
+            <div class="main-col col-sm-8 col-md-8 mgb-30-xs">
+              
+              <!-- Intro Block
+              ============================================-->
+              <section class="intro-block intro-page boxed-section cover-2-bg overlay-dark-m">
+              
+                <!-- Container -->
+                <div class="container">     
+                  <!-- Section Title -->
+                  <div class="section-title invert-colors no-margin-b">
+                    <h2>Berita</h2>
+                    <p class="hidden-xs">Lihat Berita Terakhir Mengenai Perkembangan Komoditas</p>
+                  </div>
+                  <!-- /Section Title -->
+                </div>
+
+                <!-- /Container -->
+              
+              </section><br/>
+              <!-- /Intro Block
+              ============================================-->
+              
+              <?php
+              if (isset($data_berita)){ foreach ($data_berita as $key) { ?>
+              <!-- Blog Entry -->
+              <article class="blog-entry">
+                <div class="row">
+                <div class="col-md-4">
+                  <img class="lazy img img-responsive img-thumbnail" data-original="<?php echo base_url('assets/uploads/'.$key->gambar); ?>" alt="pic">
+                </div>
+                <div class="col-md-8">
+                  <h4><a href="<?php echo base_url('berita/detail/'.$key->id_berita); ?>"><?php echo $key->judul_berita; ?></a></h4>
+                  <div class="meta">
+                    <span class="date"><i class="fa fa-calendar"></i><a href="#"><?php echo TanggalIndo($key->tgl_update); ?></a></span>
+                    <span class="author"><i class="fa fa-user"></i><a href="#">By <?php echo $key->user; ?></a></span>
+                  </div>
+                  <p class="dcap dcap-square"><?php echo word_limiter($key->isi_berita, 50); ?></p>
+                  <a href="blog-post.html" class="continue btn btn-primary">read more</a>
+                </div>  
+                </div>  
+              </article>
+              <!-- /Blog Entry -->
+                    
+                <?php }} ?>
+
+              
+              
+              
+            </div>
+            <!-- /Main Col -->
+            
+            <!-- Side Col -->
+            <div class="side-col side-col-padded col-sm-4 col-md-4">
+
+            <!-- Side Widget -->
+              <div class="side-widget">
+              
+                <img src="http://placehold.it/350x250">
+                
+              </div>
+              <!-- /Side Widget -->
+
+              <!-- Side Widget -->
+              <div class="side-widget">
+              
+                <h5 class="boxed-title">page topics</h5>
+                
+                <ul class="ul-toggle">
+                  <li><a href="#"><i class="icon fa fa-angle-right"></i>About our company</a><i class="toggler ti ti-plus"></i>
+                    <ul>
+                      <li><a href="#"><i class="icon fa fa-angle-right"></i>First Topic Link</a></li>
+                      <li><a href="#"><i class="icon fa fa-angle-right"></i>Second Topic Link</a></li>
+                      <li><a href="#"><i class="icon fa fa-angle-right"></i>Third Topic Link</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#"><i class="icon fa fa-angle-right"></i>Our Mission & Vision</a><i class="toggler ti ti-plus"></i>
+                    <ul>
+                      <li><a href="#">First Topic Link</a></li>
+                      <li><a href="#">Second Topic Link</a></li>
+                      <li><a href="#">Third Topic Link</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#"><i class="icon fa fa-angle-right"></i>Clients and case studies</a><i class="toggler ti ti-plus"></i>
+                    <ul>
+                      <li><a href="#">First Topic Link</a></li>
+                      <li><a href="#">Second Topic Link</a></li>
+                      <li><a href="#">Third Topic Link</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#"><i class="icon fa fa-angle-right"></i>Our portfolio</a></li>
+                  <li><a href="#"><i class="icon fa fa-angle-right"></i>Price Plans</a></li>
+                </ul>
+                
+              </div>
+              <!-- /Side Widget -->
+              
+            </div>
+            <!-- /Side Col -->
+
+          </div>
+          <!-- /Row -->
+        
+        </div>
+        <!-- /Container -->
+        
+      </section>
+      <!-- /Content Block
+      ============================================-->
+
+
 
 
 
 <script>
-	   /**
+       /**
 /* START add to scripts.js
 /**/
 $(function () {

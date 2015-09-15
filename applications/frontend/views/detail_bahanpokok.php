@@ -80,16 +80,22 @@ $id_jenisbahanpokok = $this->uri->segment(3);
 
 
 ?>
+<div class="content-block">
+      <div class="container cont-pad-t-sm">
 
+      
 <div class="content-header">
     <h1><?php echo $data_komoditas[0]->nama_jenis_bahan_pokok; ?></h1>
 </div>
+
+
 
 <div class="row">
     <div class="col-md-3">
         <img style="min-width:100%;" class="img-responsive img-thumbnail" src="<?php echo base_url('assets/uploads/'.$data_komoditas[0]->foto_jenis_bahan_pokok) ?>">
     </div>
     <div class="col-md-3">
+        <?php echo info_box('aqua', 2, 'Backend Users', 'users', 'admin/backend_user'); ?>
     <?php
         echo "<pre>";
         echo "Harga Maximum Minggu ke-".week_of_today()." Rp ".$data_max->harga_max;
@@ -97,6 +103,7 @@ $id_jenisbahanpokok = $this->uri->segment(3);
     ?>    
     </div>
     <div class="col-md-3">
+        
     <?php
         echo "<pre>";
         echo "Harga Minimum Minggu ke-".week_of_today()." Rp ".$data_min->harga_min;
@@ -104,6 +111,7 @@ $id_jenisbahanpokok = $this->uri->segment(3);
     ?>
     </div>
     <div class="col-md-3">
+        
     <?php
         echo "<pre>";
         echo "Harga Rata Rata Minggu ke-".week_of_today()." Rp ".floor($data_avg->harga_avg);
@@ -155,6 +163,10 @@ echo "</pre>";
 
 
 ?>
+
+</div>
+</div>
+
 <script>
 $(function () { 
     $('#grafik').highcharts({

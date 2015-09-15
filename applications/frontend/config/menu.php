@@ -16,26 +16,24 @@ $config['menu'] = array(
 		'icon'      => 'fa fa-home'
 	),
 
+	'pasar' => array(
+		'name'      => 'Data per pasar',
+		'url'       => site_url('pasar'),
+		'icon'      => 'fa fa-cog',
+		'children'  => array(
+			'Pasar 1'		=> site_url('example/demo/1'),
+			'Pasar 2'		=> site_url('example/demo/1'),
+			'Pasar 3'		=> site_url('example/demo/1'),
+			
+		)
+	),
+
 	'berita' => array(
 		'name'      => lang('berita'),
 		'url'       => site_url('berita'),
 		'icon'      => 'fa fa-newspaper-o'
 	),
 
-	/*
-	// Example to add sections with subpages
-	'example' => array(
-		'name'      => lang('example'),
-		'url'       => site_url('example'),
-		'icon'      => 'fa fa-cog',
-		'children'  => array(
-			lang('example').'1'		=> site_url('example/demo/1'),
-			lang('example').'2'		=> site_url('example/demo/2'),
-			lang('example').'3'		=> site_url('example/demo/3'),
-		)
-	),
-	*/
-	// end of example
 );
 
 /*

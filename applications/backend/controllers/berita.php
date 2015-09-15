@@ -8,6 +8,8 @@ class Berita extends MY_Controller {
 		$this->load->helper('crud');
 		$crud = generate_crud('tb_berita');
 		$crud->set_subject('Berita');
+		$crud->set_field_upload('gambar','assets/uploads');
+		$crud->callback_before_upload(array($this, '_valid_images'));
 		$user_array = get_user(); 
 		$fullname    = $user_array['full_name'];
 		$crud->field_type('user', 'hidden', $fullname);

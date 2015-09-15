@@ -16,6 +16,7 @@ var folders = {
 	css: 'assets/styles/',
 	fonts: 'assets/fonts/',
 	images: 'assets/images/',
+	assets: 'assets/',
 
 	// target folder of post-processed files
 	dist: 'assets/dist/',
@@ -32,10 +33,10 @@ var paths = {
 			folders.bower + 'bootstrap/fonts/**',
 			folders.bower + 'font-awesome/fonts/**',
 			folders.bower + 'ionicons/fonts/**',
-			folders.bower + 'bootstrap-material-design/fonts/**',
+			folders.bower + 'roboto/**',
 		],
 		scripts: [
-			//folders.bower + 'jquery-legacy/jquery.min.js',
+			//folders.js + 'uikit.js',
 			//folders.bower + 'jquery-migrate/jquery-migrate.min.js',
 		]
 	},
@@ -47,7 +48,8 @@ var paths = {
 			folders.bower + 'jquery-legacy/dist/jquery.js',
 			folders.bower + 'jquery-migrate/jquery-migrate.js',
 			folders.bower + 'bootstrap/dist/js/bootstrap.min.js',
-			folders.bower + 'bootstrap-material-design/dist/js/material.min.js',
+			folders.bower + 'jquery_lazyload/jquery.lazyload.js',
+			folders.js + 'uikit.js',
 
 			// (optional) custom scripts
 			folders.js + 'frontend.js',
@@ -55,8 +57,8 @@ var paths = {
 		css: [
 			// switch to other bootswatch theme here, or use default bootstrap theme
 			folders.bower + 'bootstrap/dist/css/bootstrap.min.css',
-			folders.bower + 'bootstrap-material-design/dist/css/material.css',
 			folders.bower + 'font-awesome/css/font-awesome.css',
+			folders.bower + 'roboto/roboto.css',
 
 			// (optional) custom files
 			folders.css + 'frontend.css',

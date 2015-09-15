@@ -35,6 +35,32 @@ class Komoditas_model extends CI_Model {
        return $query->result();
     }
 
+    function get_detailhargapasar1($id_pasar,$id_jenisbahanpokok)
+    {
+        $query = $this->db->query("SELECT *
+                                    FROM
+                                    tb_hargakomoditas
+                                    INNER JOIN tb_bahanpokok ON tb_hargakomoditas.id_bahanpokok = tb_bahanpokok.id_bahanpokok
+                                    INNER JOIN tb_pasar ON tb_hargakomoditas.id_pasar = tb_pasar.id_pasar
+                                    INNER JOIN tb_jenisbahanpokok ON tb_hargakomoditas.id_jenisbahanpokok = tb_jenisbahanpokok.id_jenisbahanpokok
+                                    where tb_hargakomoditas.id_jenisbahanpokok = $id_jenisbahanpokok AND tb_hargakomoditas.id_pasar = $id_pasar AND MONTH(tgl_update) = MONTH(CURDATE())");
+       return $query->result();
+    }
+
+    function get_caridetailhargapasar1($id_pasar,$id_jenisbahanpokok, $tgl_awal, $tgl_akhir)
+    {
+        $query = $this->db->query("SELECT *
+                                    FROM
+                                    tb_hargakomoditas
+                                    INNER JOIN tb_bahanpokok ON tb_hargakomoditas.id_bahanpokok = tb_bahanpokok.id_bahanpokok
+                                    INNER JOIN tb_pasar ON tb_hargakomoditas.id_pasar = tb_pasar.id_pasar
+                                    INNER JOIN tb_jenisbahanpokok ON tb_hargakomoditas.id_jenisbahanpokok = tb_jenisbahanpokok.id_jenisbahanpokok
+                                    where tb_hargakomoditas.id_jenisbahanpokok = $id_jenisbahanpokok AND tb_hargakomoditas.id_pasar = $id_pasar
+                                    AND tb_hargakomoditas.tgl_update BETWEEN '$tgl_awal' AND '$tgl_akhir'
+                                    ");
+       return $query->result();
+    }
+
     function get_caritanggal($id_jenisbahanpokok,$id_pasar,$tgl_awal,$tgl_akhir)
     {
         $query = $this->db->query("SELECT *
@@ -67,9 +93,15 @@ class Komoditas_model extends CI_Model {
     }
 
 
-    function get_tanggal()
+    function get_tanggal($id)
     {
-        $query = $this->db->query("SELECT DISTINCT(tgl_update) from tb_hargakomoditas ORDER BY tgl_update ASC");
+        $query = $this->db->query("SELECT DISTINCT(tgl_update) from tb_hargakomoditas WHERE MONTH(tgl_update) = MONTH(CURDATE()) AND id_jenisbahanpokok = $id ORDER BY tgl_update ASC");
+        return $query->result();   
+    }
+
+    function get_tanggal_pasar($id)
+    {
+        $query = $this->db->query("SELECT DISTINCT(tgl_update) from tb_hargakomoditas WHERE MONTH(tgl_update) = MONTH(CURDATE()) AND id_pasar = $id ORDER BY tgl_update ASC");
         return $query->result();   
     }
 
@@ -98,27 +130,69 @@ class Komoditas_model extends CI_Model {
 
     function get_rataratahariini()
     {
-        $query = $this->db->query("SELECT tb_hargakomoditas.id_jenisbahanpokok, tb_bahanpokok.nama_bahan_pokok, tb_jenisbahanpokok.nama_jenis_bahan_pokok, ROUND(AVG(harga)) as harga_ratarata, tgl_update, tb_jenisbahanpokok.foto_jenis_bahan_pokok
+        $query = $this->db->query("SELECT a.id_jenisbahanpokok, b.nama_bahan_pokok, c.nama_jenis_bahan_pokok, ROUND(AVG(a.harga)) AS harga_ratarata, a.tgl_update, c.foto_jenis_bahan_pokok, a.satuan
                                 FROM
-                                tb_hargakomoditas
-                                INNER JOIN tb_bahanpokok ON tb_hargakomoditas.id_bahanpokok = tb_bahanpokok.id_bahanpokok
-                                INNER JOIN tb_pasar ON tb_hargakomoditas.id_pasar = tb_pasar.id_pasar
-                                INNER JOIN tb_jenisbahanpokok ON tb_hargakomoditas.id_jenisbahanpokok = tb_jenisbahanpokok.id_jenisbahanpokok
-                                WHERE tgl_update IN (SELECT max(tgl_update) FROM tb_hargakomoditas)
-                                GROUP BY tb_hargakomoditas.id_jenisbahanpokok");
+                                tb_hargakomoditas a, tb_bahanpokok b, tb_jenisbahanpokok c
+                                WHERE
+                                b.`id_bahanpokok` = a.`id_bahanpokok` AND c.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`
+                                AND a.`tgl_update` = (SELECT MAX(tb_hargakomoditas.`tgl_update`) FROM tb_hargakomoditas WHERE tb_hargakomoditas.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`)
+                                GROUP BY a.id_jenisbahanpokok");
         return $query->result();
     }
 
     function get_ratarataharikemarin()
     {
-        $query = $this->db->query("SELECT tb_hargakomoditas.id_jenisbahanpokok as id_jenisbahanpokok2, tb_bahanpokok.nama_bahan_pokok, tb_jenisbahanpokok.nama_jenis_bahan_pokok, ROUND(AVG(harga)) as harga_ratarata, tgl_update, tb_jenisbahanpokok.foto_jenis_bahan_pokok
+        $query = $this->db->query("SELECT a.id_jenisbahanpokok, b.nama_bahan_pokok, c.nama_jenis_bahan_pokok, ROUND(AVG(a.harga)) AS harga_ratarata, a.tgl_update, c.foto_jenis_bahan_pokok
                                 FROM
-                                tb_hargakomoditas
-                                INNER JOIN tb_bahanpokok ON tb_hargakomoditas.id_bahanpokok = tb_bahanpokok.id_bahanpokok
-                                INNER JOIN tb_pasar ON tb_hargakomoditas.id_pasar = tb_pasar.id_pasar
-                                INNER JOIN tb_jenisbahanpokok ON tb_hargakomoditas.id_jenisbahanpokok = tb_jenisbahanpokok.id_jenisbahanpokok
-                                WHERE tgl_update = (SELECT max(tgl_update) FROM tb_hargakomoditas) - INTERVAL 1 DAY
-                                GROUP BY tb_hargakomoditas.id_jenisbahanpokok");
+                                tb_hargakomoditas a, tb_bahanpokok b, tb_jenisbahanpokok c
+                                WHERE
+                                b.`id_bahanpokok` = a.`id_bahanpokok` AND c.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`
+                                AND a.`tgl_update` = (SELECT MAX(tb_hargakomoditas.`tgl_update`) -  INTERVAL 1 DAY  FROM tb_hargakomoditas WHERE tb_hargakomoditas.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`)
+                                GROUP BY a.id_jenisbahanpokok");
+        return $query->result();
+    }
+
+    function get_rataratapasarterakhir($id)
+    {
+        $query = $this->db->query("SELECT a.id_jenisbahanpokok, a.id_pasar, b.nama_bahan_pokok, c.nama_jenis_bahan_pokok, a.harga AS harga_ratarata, a.tgl_update, c.foto_jenis_bahan_pokok, a.satuan, d.foto_pasar
+                                FROM
+                                tb_hargakomoditas a, tb_bahanpokok b, tb_jenisbahanpokok c, tb_pasar d
+                                WHERE
+                                b.`id_bahanpokok` = a.`id_bahanpokok` AND c.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`
+                                AND
+                                d.`id_pasar` = a.`id_pasar`
+                                AND a.`tgl_update` = (SELECT MAX(tb_hargakomoditas.`tgl_update`) FROM tb_hargakomoditas WHERE tb_hargakomoditas.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`)
+                                AND a.id_pasar = $id
+                                GROUP BY a.id_jenisbahanpokok
+");
+        return $query->result();
+    }
+
+    function get_rataratapasarkemarin($id)
+    {
+        $query = $this->db->query("SELECT a.id_jenisbahanpokok, a.id_pasar, b.nama_bahan_pokok, c.nama_jenis_bahan_pokok, a.harga AS harga_ratarata, a.tgl_update, c.foto_jenis_bahan_pokok
+                                    FROM
+                                    tb_hargakomoditas a, tb_bahanpokok b, tb_jenisbahanpokok c
+                                    WHERE
+                                    b.`id_bahanpokok` = a.`id_bahanpokok` AND c.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`
+                                    AND a.`tgl_update` = (SELECT MAX(tb_hargakomoditas.`tgl_update`) -  INTERVAL 1 DAY  FROM tb_hargakomoditas WHERE tb_hargakomoditas.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`)
+                                    AND a.id_pasar = $id
+                                    GROUP BY a.id_jenisbahanpokok");
+        return $query->result();
+    }
+
+     function get_namakomoditas($id)
+    {
+        $query = $this->db->query("SELECT a.id_jenisbahanpokok, c.nama_jenis_bahan_pokok
+                                FROM
+                                tb_hargakomoditas a, tb_bahanpokok b, tb_jenisbahanpokok c, tb_pasar d
+                                WHERE
+                                b.`id_bahanpokok` = a.`id_bahanpokok` AND c.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`
+                                AND
+                                d.`id_pasar` = a.`id_pasar`
+                                AND a.id_pasar = $id
+                                GROUP BY a.id_jenisbahanpokok
+");
         return $query->result();
     }
 }

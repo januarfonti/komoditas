@@ -67,10 +67,10 @@ $autoload['libraries'] = array('database', 'session');
 $autoload['helper'] = array(
 
 	// CodeIgniter helpers
-	'url', 'html', 'form', 'inflector', 'array', 'language',
+	'url', 'html', 'form', 'inflector', 'array', 'language','text',
 
 	// CI Bootstrap helpers
-	'alert', 'auth',
+	'alert', 'auth','tanggal',
 	
 );
 
@@ -117,7 +117,7 @@ $autoload['language'] = array();
 |
 */
 
-$autoload['model'] = array('Komoditas_model');
+$autoload['model'] = array('Komoditas_model','Berita_model');
 
 
 /* End of file autoload.php */
