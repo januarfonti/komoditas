@@ -111,19 +111,19 @@ class Komoditas_model extends CI_Model {
 
     function get_max($id)
     {
-        $query = $this->db->query("SELECT MAX(harga) as harga_max from tb_hargakomoditas where id_jenisbahanpokok = $id AND YEARWEEK(tgl_update, 1) = YEARWEEK(CURDATE(), 1)");
+        $query = $this->db->query("SELECT MAX(a.harga) as harga_max,a.tgl_update,b.nama_pasar from tb_hargakomoditas a, tb_pasar b where a.id_pasar = b.id_pasar AND a.id_jenisbahanpokok = $id AND MONTH(a.tgl_update) = MONTH(CURDATE())");
         return $query->row();
     }
 
     function get_min($id)
     {
-        $query = $this->db->query("SELECT MIN(harga) as harga_min from tb_hargakomoditas where id_jenisbahanpokok = $id AND YEARWEEK(tgl_update, 1) = YEARWEEK(CURDATE(), 1)");
+        $query = $this->db->query("SELECT MIN(a.harga) as harga_min,a.tgl_update,b.nama_pasar from tb_hargakomoditas a, tb_pasar b where a.id_pasar = b.id_pasar AND a.id_jenisbahanpokok = $id AND MONTH(a.tgl_update) = MONTH(CURDATE())");
         return $query->row();
     }
 
     function get_avg($id)
     {
-        $query = $this->db->query("SELECT AVG(harga) as harga_avg from tb_hargakomoditas where id_jenisbahanpokok = $id AND YEARWEEK(tgl_update, 1) = YEARWEEK(CURDATE(), 1)");
+        $query = $this->db->query("SELECT AVG(a.harga) as harga_avg from tb_hargakomoditas a WHERE a.id_jenisbahanpokok = $id AND MONTH(a.tgl_update) = MONTH(CURDATE())");
         return $query->row();
     }
 
@@ -151,14 +151,16 @@ class Komoditas_model extends CI_Model {
                                 tb_hargakomoditas a, tb_bahanpokok b, tb_jenisbahanpokok c
                                 WHERE
                                 b.`id_bahanpokok` = a.`id_bahanpokok` AND c.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`
-                                AND a.`tgl_update` = (SELECT MAX(tb_hargakomoditas.`tgl_update`) -  INTERVAL 1 DAY  FROM tb_hargakomoditas WHERE tb_hargakomoditas.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`)
-                                GROUP BY a.id_jenisbahanpokok");
+                                AND a.`tgl_update` = (SELECT MAX(tb_hargakomoditas.`tgl_update`) FROM tb_hargakomoditas WHERE tb_hargakomoditas.`tgl_update` NOT IN (SELECT MAX(tb_hargakomoditas.`tgl_update`) FROM tb_hargakomoditas WHERE tb_hargakomoditas.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`) AND tb_hargakomoditas.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`)
+                                GROUP BY a.id_jenisbahanpokok
+
+                                ");
         return $query->result();
     }
 
     function get_rataratapasarterakhir($id)
     {
-        $query = $this->db->query("SELECT a.id_jenisbahanpokok, a.id_pasar, b.nama_bahan_pokok, c.nama_jenis_bahan_pokok, a.harga AS harga_ratarata, a.tgl_update, c.foto_jenis_bahan_pokok, a.satuan, d.foto_pasar
+        $query = $this->db->query("SELECT a.id_jenisbahanpokok, a.id_pasar, b.nama_bahan_pokok, c.nama_jenis_bahan_pokok, a.harga AS harga_ratarata, a.tgl_update, c.foto_jenis_bahan_pokok, a.satuan, d.foto_pasar, d.nama_pasar,d.alamat_pasar, d.biografi_pasar
                                 FROM
                                 tb_hargakomoditas a, tb_bahanpokok b, tb_jenisbahanpokok c, tb_pasar d
                                 WHERE
@@ -174,12 +176,13 @@ class Komoditas_model extends CI_Model {
 
     function get_rataratapasarkemarin($id)
     {
-        $query = $this->db->query("SELECT a.id_jenisbahanpokok, a.id_pasar, b.nama_bahan_pokok, c.nama_jenis_bahan_pokok, a.harga AS harga_ratarata, a.tgl_update, c.foto_jenis_bahan_pokok
+        $query = $this->db->query("SELECT a.id_jenisbahanpokok, a.id_pasar, b.nama_bahan_pokok, c.nama_jenis_bahan_pokok, a.harga AS harga_ratarata, a.tgl_update, c.foto_jenis_bahan_pokok, d.nama_pasar,d.alamat_pasar, d.biografi_pasar
                                     FROM
-                                    tb_hargakomoditas a, tb_bahanpokok b, tb_jenisbahanpokok c
+                                    tb_hargakomoditas a, tb_bahanpokok b, tb_jenisbahanpokok c,tb_pasar d
                                     WHERE
                                     b.`id_bahanpokok` = a.`id_bahanpokok` AND c.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`
-                                    AND a.`tgl_update` = (SELECT MAX(tb_hargakomoditas.`tgl_update`) -  INTERVAL 1 DAY  FROM tb_hargakomoditas WHERE tb_hargakomoditas.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`)
+                                    
+                                    AND a.`tgl_update` = (SELECT MAX(tb_hargakomoditas.`tgl_update`) FROM tb_hargakomoditas WHERE tb_hargakomoditas.`tgl_update` NOT IN (SELECT MAX(tb_hargakomoditas.`tgl_update`) FROM tb_hargakomoditas WHERE tb_hargakomoditas.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`) AND tb_hargakomoditas.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`)
                                     AND a.id_pasar = $id
                                     GROUP BY a.id_jenisbahanpokok");
         return $query->result();

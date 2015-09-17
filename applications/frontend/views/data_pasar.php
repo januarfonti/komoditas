@@ -1,5 +1,5 @@
 <?php
-
+$bln      =date("m");
 $id_pasar = $this->uri->segment(3);
 function buatrp($angka)
 {
@@ -8,28 +8,27 @@ function buatrp($angka)
 }
 ?>
 
-
-
-        
-        <!-- Intro Block
-              ============================================-->
-              <section style="background: url('<?php echo base_url("assets/uploads/".$data_rataratahariini[0]->foto_pasar); ?>') no-repeat center 0 fixed; !important" class="intro-block intro-page boxed-section overlay-dark-m">
+    <!-- Main Col -->
+            <div class="container">
+              <!-- Blog Entry -->
+              <article class="blog-entry">
+                <div class="row">
+                <div class="col-md-12">
+                <div>
+                <img style="margin-right:30px;" class="postImg pull-left img-responsive img-thumbnail" src="<?php echo base_url("assets/uploads/".$data_rataratahariini[0]->foto_pasar); ?>" alt="pic">
+                    <h3><?php echo $data_rataratahariini[0]->nama_pasar; ?></h3>
+                    <p style="margin-bottom:-1px;"><b>Alamat : </b> <?php echo $data_rataratahariini[0]->alamat_pasar; ?></p>
+                    <?php echo $data_rataratahariini[0]->biografi_pasar; ?>
+                </div>  
+                </div>  
+              </article>
+              <!-- /Blog Entry -->
+                    
               
-                <!-- Container -->
-                <div class="container">     
-                  <!-- Section Title -->
-                  <div class="section-title invert-colors no-margin-b">
-                    <h2>harga rata rata komoditas</h2>
-                    <p>Update terakhir tanggal <?php echo TanggalIndo($data_rataratahariini[0]->tgl_update); ?>, perbandingan dengan harga tanggal <?php echo TanggalIndo($data_ratarataharikemarin[0]->tgl_update); ?></p>
-                  </div>
-                  <!-- /Section Title -->
-                </div>
+            </div>
+            <!-- /Main Col -->
 
-                <!-- /Container -->
-              
-              </section><br/>
-              <!-- /Intro Block
-              ============================================-->
+
 
       <!-- Intro Block
       ============================================ -->
@@ -37,7 +36,7 @@ function buatrp($angka)
       
         <!-- Container -->
         <div class="container">
-
+        <center><h4>Perbandingan harga komoditas antara tanggal <?php echo TanggalIndo($data_rataratahariini[0]->tgl_update); ?> dan <?php echo TanggalIndo($data_ratarataharikemarin[0]->tgl_update); ?> </h4></center>
           <!-- Slider Wrapper -->
           <div class="intro-slider">
           
@@ -153,7 +152,7 @@ $(function () {
             type: 'line'
         },
         title: {
-            text: 'GRAFIK HARGA'
+            text: 'GRAFIK HARGA BULAN <?php echo bulan($bln); ?>'
         },
         xAxis: {
             categories: [<?php foreach($data_tanggal as $row_tanggal){ ?>'<?php echo $row_tanggal->tgl_update; ?>', <?php } ?>]

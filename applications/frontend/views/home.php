@@ -1,12 +1,3 @@
-<?php
-function buatrp($angka)
-{
-    $jadi = "Rp " . number_format($angka,0,',','.');
-    return $jadi;
-}
-?>
-
-        
         <!-- Intro Block
               ============================================-->
               <section class="intro-block intro-page boxed-section cover-1-bg overlay-dark-m">

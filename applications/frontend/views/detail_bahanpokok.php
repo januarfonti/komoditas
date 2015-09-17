@@ -39,38 +39,10 @@ function last_date_ofthe_month($month="", $year="")
     return $last_date;
 }
 
-function bulan($bulan)
-{
-Switch ($bulan){
-    case 1 : $bulan="Januari";
-        Break;
-    case 2 : $bulan="Februari";
-        Break;
-    case 3 : $bulan="Maret";
-        Break;
-    case 4 : $bulan="April";
-        Break;
-    case 5 : $bulan="Mei";
-        Break;
-    case 6 : $bulan="Juni";
-        Break;
-    case 7 : $bulan="Juli";
-        Break;
-    case 8 : $bulan="Agustus";
-        Break;
-    case 9 : $bulan="September";
-        Break;
-    case 10 : $bulan="Oktober";
-        Break;
-    case 11 : $bulan="November";
-        Break;
-    case 12 : $bulan="Desember";
-        Break;
-    }
-return $bulan;
-}
+
 
 $bln                =date("m");
+$bulan              = bulan($bln);
 $id_jenisbahanpokok = $this->uri->segment(3);
 
 
@@ -80,92 +52,91 @@ $id_jenisbahanpokok = $this->uri->segment(3);
 
 
 ?>
+
 <div class="content-block">
-      <div class="container cont-pad-t-sm">
+    <div class="container cont-pad-t-sm">
+        <div class="content-header">
+            <h1><?php echo $data_komoditas[0]->nama_jenis_bahan_pokok; ?></h1>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img style="min-width:100%;" class="img-responsive img-thumbnail" src="<?php echo base_url('assets/uploads/'.$data_komoditas[0]->foto_jenis_bahan_pokok) ?>">
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Harga Maksimum</h3>
+                    <span>Bulan <?php echo $bulan; ?></span>
+                  </div>
+                  <div class="panel-body">
+                    <span class="panel-harga"><?php echo buatrp($data_max->harga_max); ?></span>
+                  </div>
+                  <div class="panel-footer">
+                    <?php echo $data_max->nama_pasar; ?>
+                  </div>
+                </div>
+            </div>
 
-      
-<div class="content-header">
-    <h1><?php echo $data_komoditas[0]->nama_jenis_bahan_pokok; ?></h1>
-</div>
+            <div class="col-md-3 text-center">
+                <div class="panel panel-success">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Harga Minimum</h3>
+                    <span>Bulan <?php echo $bulan; ?></span>
+                  </div>
+                  <div class="panel-body">
+                    <span class="panel-harga"><?php echo buatrp($data_min->harga_min); ?></span>
+                  </div>
+                  <div class="panel-footer">
+                    <?php echo $data_min->nama_pasar; ?>
+                  </div>
+                </div>
+            </div>
 
-
-
-<div class="row">
-    <div class="col-md-3">
-        <img style="min-width:100%;" class="img-responsive img-thumbnail" src="<?php echo base_url('assets/uploads/'.$data_komoditas[0]->foto_jenis_bahan_pokok) ?>">
+            <div class="col-md-3 text-center">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Harga Rata Rata</h3>
+                    <span>Bulan <?php echo $bulan; ?></span>
+                  </div>
+                  <div class="panel-body">
+                    <span class="panel-harga"><?php echo buatrp($data_avg->harga_avg); ?></span>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-md-12">
+            <!-- Form Panel -->
+                <div class="form-panel">
+                  <header><i class="fa fa-search"></i> Cari Data</header>
+                  <fieldset>
+                    <?php
+                      echo form_open('bahanpokok/cari_tanggal/'.$id_jenisbahanpokok);
+                    ?>
+                      <div class="form-group">
+                      <label>Dari</label>
+                        <div class="input-group">
+                          <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                          <input name="tgl_awal" id="datepicker" type="text" class="form-control" placeholder="Tanggal Awal" required>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                      <label>Sampai</label>
+                        <div class="input-group">
+                          <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                          <input name="tgl_akhir" id="datepicker1" type="text" class="form-control" placeholder="Tanggal Akhir" required>
+                        </div>
+                      </div>
+                      <button class="btn btn-primary btn-bigger btn-block">Cari</button>
+                    </form>
+                  </fieldset>
+                  <div id="grafik" style="width:100%; height:400px;"></div>
+                </div>
+                <!-- /Form Panel -->
+            </div>
+        </div>
     </div>
-    <div class="col-md-3">
-        <?php echo info_box('aqua', 2, 'Backend Users', 'users', 'admin/backend_user'); ?>
-    <?php
-        echo "<pre>";
-        echo "Harga Maximum Minggu ke-".week_of_today()." Rp ".$data_max->harga_max;
-        echo "</pre>";
-    ?>    
-    </div>
-    <div class="col-md-3">
-        
-    <?php
-        echo "<pre>";
-        echo "Harga Minimum Minggu ke-".week_of_today()." Rp ".$data_min->harga_min;
-        echo "</pre>";
-    ?>
-    </div>
-    <div class="col-md-3">
-        
-    <?php
-        echo "<pre>";
-        echo "Harga Rata Rata Minggu ke-".week_of_today()." Rp ".floor($data_avg->harga_avg);
-        echo "</pre>";
-    ?>        
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-12">
-
-        <?php
-            $attributes = array('class' => 'form-inline');
-            echo form_open('bahanpokok/cari_tanggal/'.$id_jenisbahanpokok, $attributes);
-        ?>
-          <div class="form-group">
-            <label class="sr-only">Tanggal</label>
-            <input name="tgl_awal" type="text" class="form-control" id="datepicker" placeholder="Tanggal Awal">
-          </div>
-          <div class="form-group">
-            <label class="sr-only">Tanggal Akhir</label>
-            <input name="tgl_akhir" type="text" class="form-control" id="datepicker1" placeholder="Tanggal Akhir">
-          </div>
-          
-          <button type="submit" class="btn btn-default">Cari</button>
-        </form>
-    </div>
-</div>
-<br/>
-
-<div id="grafik" style="width:100%; height:400px;"></div>
-
-<br/>	
-<?php
-
-echo "<pre>";
-print_r(week_of_today());
-echo "</pre>";
-
-echo "<pre>";
-print_r($data_komoditas);
-echo "</pre>";
-
-
-echo "<pre>";
-print_r($data_tanggal);
-echo "</pre>";
-
-
-
-?>
-
-</div>
-</div>
 
 <script>
 $(function () { 

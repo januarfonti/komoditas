@@ -35,7 +35,7 @@ class Bahanpokok extends MY_Controller {
 		$this->mViewFile                   = 'caritanggal_bahanpokok';
 		$this->mViewData['data_komoditas'] = $this->Komoditas_model->get_caridetailharga($id,$tgl_awal,$tgl_akhir);
 		$this->mViewData['data_pasar']     = $this->Komoditas_model->get_pasar();
-		$this->mViewData['data_tanggal']   = $this->Komoditas_model->get_tanggal();
+		$this->mViewData['data_tanggal']   = $this->Komoditas_model->get_tanggal($id);
 		$this->mViewData['data_max']       = $this->Komoditas_model->get_max($id);
 		$this->mViewData['data_min']       = $this->Komoditas_model->get_min($id);
 		$this->mViewData['data_avg']       = $this->Komoditas_model->get_avg($id);

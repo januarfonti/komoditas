@@ -19,7 +19,7 @@ $config['menu'] = array(
 	'pasar' => array(
 		'name'      => 'Data per pasar',
 		'url'       => site_url('pasar'),
-		'icon'      => 'fa fa-cog',
+		'icon'      => 'fa fa-building-o',
 		'children'  => array(
 			'Pasar 1'		=> site_url('example/demo/1'),
 			'Pasar 2'		=> site_url('example/demo/1'),
@@ -28,10 +28,22 @@ $config['menu'] = array(
 		)
 	),
 
+	'tentang' => array(
+		'name'      => 'Tentang Sikompa',
+		'url'       => site_url(),
+		'icon'      => 'fa fa-users'
+	),
+
 	'berita' => array(
 		'name'      => lang('berita'),
 		'url'       => site_url('berita'),
 		'icon'      => 'fa fa-newspaper-o'
+	),
+
+	'kontak' => array(
+		'name'      => 'Kontak',
+		'url'       => site_url(),
+		'icon'      => 'fa fa-envelope'
 	),
 
 );

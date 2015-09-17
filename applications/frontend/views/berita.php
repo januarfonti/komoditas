@@ -48,7 +48,7 @@
                     <span class="author"><i class="fa fa-user"></i><a href="#">By <?php echo $key->user; ?></a></span>
                   </div>
                   <p class="dcap dcap-square"><?php echo word_limiter($key->isi_berita, 50); ?></p>
-                  <a href="blog-post.html" class="continue btn btn-primary">read more</a>
+                  <a href="<?php echo base_url('berita/detail/'.$key->id_berita); ?>" class="continue btn btn-primary">Selanjutnya</a>
                 </div>  
                 </div>  
               </article>
