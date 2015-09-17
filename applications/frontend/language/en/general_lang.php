@@ -1,6 +1,6 @@
 <?php
 
-	$lang['website_name'] = "MOM - Sistem Informasi Komoditas";
+	$lang['website_name'] = "Sikompa";
 	$lang['website_copyright'] = "&copy; 2015 All rights reserved.";
 
 	// Menu

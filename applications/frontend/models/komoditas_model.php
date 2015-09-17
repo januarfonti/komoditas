@@ -10,18 +10,7 @@ class Komoditas_model extends CI_Model {
         parent::__construct();
     }
     
-    function get_detailharga($id)
-    {
-        $this->db->select('*');
-        $this->db->from('tb_hargakomoditas');
-        $this->db->where('tb_hargakomoditas.id_jenisbahanpokok',$id);
-        $this->db->join('tb_bahanpokok', 'tb_bahanpokok.id_bahanpokok = tb_hargakomoditas.id_bahanpokok','inner');
-        $this->db->join('tb_pasar', 'tb_pasar.id_pasar = tb_hargakomoditas.id_pasar','inner');
-        $this->db->join('tb_jenisbahanpokok', 'tb_jenisbahanpokok.id_jenisbahanpokok = tb_hargakomoditas.id_jenisbahanpokok','inner');
-        $this->db->group_by('tb_hargakomoditas.id_pasar');
-        $query = $this->db->get();
-        return $query->result();
-    }
+    
 
     function get_detailhargapasar($id_jenisbahanpokok,$id_pasar)
     {
@@ -31,7 +20,9 @@ class Komoditas_model extends CI_Model {
                                     INNER JOIN tb_bahanpokok ON tb_hargakomoditas.id_bahanpokok = tb_bahanpokok.id_bahanpokok
                                     INNER JOIN tb_pasar ON tb_hargakomoditas.id_pasar = tb_pasar.id_pasar
                                     INNER JOIN tb_jenisbahanpokok ON tb_hargakomoditas.id_jenisbahanpokok = tb_jenisbahanpokok.id_jenisbahanpokok
-                                    where tb_hargakomoditas.id_jenisbahanpokok = $id_jenisbahanpokok AND tb_hargakomoditas.id_pasar = $id_pasar AND MONTH(tgl_update) = MONTH(CURDATE())");
+                                    where tb_hargakomoditas.id_jenisbahanpokok = $id_jenisbahanpokok 
+                                    AND tb_hargakomoditas.id_pasar = $id_pasar 
+                                    AND MONTH(tgl_update) = MONTH(CURDATE())");
        return $query->result();
     }
 
@@ -88,6 +79,19 @@ class Komoditas_model extends CI_Model {
         $this->db->join('tb_pasar', 'tb_pasar.id_pasar = tb_hargakomoditas.id_pasar','inner');
         $this->db->join('tb_jenisbahanpokok', 'tb_jenisbahanpokok.id_jenisbahanpokok = tb_hargakomoditas.id_jenisbahanpokok','inner');
         //$this->db->group_by('tb_hargakomoditas.id_pasar');
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    function get_detailharga($id)
+    {
+        $this->db->select('*');
+        $this->db->from('tb_hargakomoditas');
+        $this->db->where('tb_hargakomoditas.id_jenisbahanpokok',$id);
+        $this->db->join('tb_bahanpokok', 'tb_bahanpokok.id_bahanpokok = tb_hargakomoditas.id_bahanpokok','inner');
+        $this->db->join('tb_pasar', 'tb_pasar.id_pasar = tb_hargakomoditas.id_pasar','inner');
+        $this->db->join('tb_jenisbahanpokok', 'tb_jenisbahanpokok.id_jenisbahanpokok = tb_hargakomoditas.id_jenisbahanpokok','inner');
+        $this->db->group_by('tb_hargakomoditas.id_pasar');
         $query = $this->db->get();
         return $query->result();
     }
@@ -192,7 +196,23 @@ class Komoditas_model extends CI_Model {
                                 d.`id_pasar` = a.`id_pasar`
                                 AND a.id_pasar = $id
                                 GROUP BY a.id_jenisbahanpokok
-");
+                                ");
         return $query->result();
     }
+
+    function get_carinamakomoditas($id,$tgl_awal,$tgl_akhir)
+    {
+        $query = $this->db->query("SELECT a.id_jenisbahanpokok, c.nama_jenis_bahan_pokok
+                                FROM
+                                tb_hargakomoditas a, tb_bahanpokok b, tb_jenisbahanpokok c, tb_pasar d
+                                WHERE
+                                b.`id_bahanpokok` = a.`id_bahanpokok` AND c.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`
+                                AND
+                                d.`id_pasar` = a.`id_pasar`
+                                AND a.id_pasar = $id
+                                
+                                ");
+        return $query->result();
+    }
+
 }

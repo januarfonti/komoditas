@@ -28,7 +28,7 @@ class Pasar extends MY_Controller {
 		$this->mViewFile                             = 'cari_tanggal_pasar';
 		$this->mViewData['data_rataratahariini']     = $this->Komoditas_model->get_rataratapasarterakhir($id);
 		$this->mViewData['data_ratarataharikemarin'] = $this->Komoditas_model->get_rataratapasarkemarin($id);
-		$this->mViewData['data_komoditas']     = $this->Komoditas_model->get_namakomoditas($id);
+		$this->mViewData['data_komoditas']     = $this->Komoditas_model->get_carinamakomoditas($id,$tgl_awal,$tgl_akhir);
 		$this->mViewData['tgl_awal']       = $tgl_awal;
 		$this->mViewData['tgl_akhir']       = $tgl_akhir;
 		$this->mViewData['data_tanggal']   = $this->Komoditas_model->get_tanggal_pasar($id);

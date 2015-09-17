@@ -29,7 +29,7 @@
               ============================================-->
               <hr/>
             <!-- Main Col -->
-            <div class="main-col col-sm-8 col-md-8 mgb-30-xs">
+            <div class="main-col col-sm-8 col-md-8 mgb-30-xs" id="postList">
               
               
               
@@ -56,7 +56,7 @@
                     
                 <?php }} ?>
 
-              
+              <?php echo $this->ajax_pagination->create_links(); ?>
               
               
             </div>

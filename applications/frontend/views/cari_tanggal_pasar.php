@@ -170,7 +170,7 @@ $(function () {
             {
                 name: '<?php echo $row_komoditas->nama_jenis_bahan_pokok; ?>',
                 <?php 
-                $harga              = $this->Komoditas_model->get_detailhargapasar1($id_pasar,$row_komoditas->id_jenisbahanpokok);
+                $harga              = $this->Komoditas_model->get_caridetailhargapasar1($id_pasar,$row_komoditas->id_jenisbahanpokok,$tgl_awal,$tgl_akhir);
                 ?>
                 data: [<?php foreach($harga as $row_harga) {echo $row_harga->harga.',';} ?>]
             }
