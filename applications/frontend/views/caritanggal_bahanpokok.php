@@ -1,5 +1,6 @@
 <?php
-$bln                =date("m");
+$bln                = date("m");
+$bulan              = bulan($bln);
 $id_jenisbahanpokok = $this->uri->segment(3);
 ?>
 
@@ -12,44 +13,44 @@ $id_jenisbahanpokok = $this->uri->segment(3);
             <div class="col-md-3">
                 <img style="min-width:100%;" class="img-responsive img-thumbnail" src="<?php echo base_url('assets/uploads/'.$data_komoditas[0]->foto_jenis_bahan_pokok) ?>">
             </div>
-            <div class="col-md-3">
+             <div class="col-md-3 text-center">
                 <div class="panel panel-danger">
                   <div class="panel-heading">
                     <h3 class="panel-title">Harga Maksimum</h3>
+                    <span>Bulan <?php echo $bulan; ?></span>
                   </div>
                   <div class="panel-body">
-                    Panel content
+                    <span class="panel-harga"><?php echo buatrp($data_max->harga_max)."/".$data_max->satuan; ?></span>
                   </div>
                   <div class="panel-footer">
-                    Panel content
+                    <?php echo $data_max->nama_pasar; ?>
                   </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 text-center">
                 <div class="panel panel-success">
                   <div class="panel-heading">
                     <h3 class="panel-title">Harga Minimum</h3>
+                    <span>Bulan <?php echo $bulan; ?></span>
                   </div>
                   <div class="panel-body">
-                    Panel content
+                    <span class="panel-harga"><?php echo buatrp($data_min->harga_min)."/".$data_max->satuan; ?></span>
                   </div>
                   <div class="panel-footer">
-                    Panel content
+                    <?php echo $data_min->nama_pasar; ?>
                   </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 text-center">
                 <div class="panel panel-info">
                   <div class="panel-heading">
                     <h3 class="panel-title">Harga Rata Rata</h3>
+                    <span>Bulan <?php echo $bulan; ?></span>
                   </div>
                   <div class="panel-body">
-                    Panel content
-                  </div>
-                  <div class="panel-footer">
-                    Panel content
+                    <span class="panel-harga"><?php echo buatrp($data_avg->harga_avg)."/".$data_max->satuan; ?></span>
                   </div>
                 </div>
             </div>

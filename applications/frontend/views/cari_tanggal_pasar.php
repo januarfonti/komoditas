@@ -1,11 +1,7 @@
 <?php
 
 $id_pasar = $this->uri->segment(3);
-function buatrp($angka)
-{
-    $jadi = "Rp " . number_format($angka,0,',','.');
-    return $jadi;
-}
+
 ?>
 
 

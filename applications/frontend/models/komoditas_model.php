@@ -111,25 +111,35 @@ class Komoditas_model extends CI_Model {
 
     function get_max($id)
     {
-        $query = $this->db->query("SELECT MAX(a.harga) as harga_max,a.tgl_update,b.nama_pasar from tb_hargakomoditas a, tb_pasar b where a.id_pasar = b.id_pasar AND a.id_jenisbahanpokok = $id AND MONTH(a.tgl_update) = MONTH(CURDATE())");
+        $query = $this->db->query("SELECT MAX(a.harga) as harga_max,a.tgl_update,b.nama_pasar, a.satuan from tb_hargakomoditas a, tb_pasar b where a.id_pasar = b.id_pasar AND a.id_jenisbahanpokok = $id AND MONTH(a.tgl_update) = MONTH(CURDATE())");
         return $query->row();
     }
 
     function get_min($id)
     {
-        $query = $this->db->query("SELECT MIN(a.harga) as harga_min,a.tgl_update,b.nama_pasar from tb_hargakomoditas a, tb_pasar b where a.id_pasar = b.id_pasar AND a.id_jenisbahanpokok = $id AND MONTH(a.tgl_update) = MONTH(CURDATE())");
+        $query = $this->db->query("SELECT MIN(a.harga) as harga_min,a.tgl_update,b.nama_pasar, a.satuan from tb_hargakomoditas a, tb_pasar b where a.id_pasar = b.id_pasar AND a.id_jenisbahanpokok = $id AND MONTH(a.tgl_update) = MONTH(CURDATE())");
         return $query->row();
     }
 
     function get_avg($id)
     {
-        $query = $this->db->query("SELECT AVG(a.harga) as harga_avg from tb_hargakomoditas a WHERE a.id_jenisbahanpokok = $id AND MONTH(a.tgl_update) = MONTH(CURDATE())");
+        $query = $this->db->query("SELECT AVG(a.harga) as harga_avg, a.satuan from tb_hargakomoditas a WHERE a.id_jenisbahanpokok = $id AND MONTH(a.tgl_update) = MONTH(CURDATE())");
         return $query->row();
     }
 
     function get_pasar()
     {
         return $this->db->get('tb_pasar')->result();
+    }
+
+    function get_tentang()
+    {
+        return $this->db->get('tb_tentang')->row();
+    }
+
+    function get_kontak()
+    {
+        return $this->db->get('tb_kontak')->row();
     }
 
     function get_rataratahariini()

@@ -69,7 +69,7 @@ $id_jenisbahanpokok = $this->uri->segment(3);
                     <span>Bulan <?php echo $bulan; ?></span>
                   </div>
                   <div class="panel-body">
-                    <span class="panel-harga"><?php echo buatrp($data_max->harga_max); ?></span>
+                    <span class="panel-harga"><?php echo buatrp($data_max->harga_max)."/".$data_max->satuan; ?></span>
                   </div>
                   <div class="panel-footer">
                     <?php echo $data_max->nama_pasar; ?>
@@ -84,7 +84,7 @@ $id_jenisbahanpokok = $this->uri->segment(3);
                     <span>Bulan <?php echo $bulan; ?></span>
                   </div>
                   <div class="panel-body">
-                    <span class="panel-harga"><?php echo buatrp($data_min->harga_min); ?></span>
+                    <span class="panel-harga"><?php echo buatrp($data_min->harga_min)."/".$data_max->satuan; ?></span>
                   </div>
                   <div class="panel-footer">
                     <?php echo $data_min->nama_pasar; ?>
@@ -99,7 +99,7 @@ $id_jenisbahanpokok = $this->uri->segment(3);
                     <span>Bulan <?php echo $bulan; ?></span>
                   </div>
                   <div class="panel-body">
-                    <span class="panel-harga"><?php echo buatrp($data_avg->harga_avg); ?></span>
+                    <span class="panel-harga"><?php echo buatrp($data_avg->harga_avg)."/".$data_max->satuan; ?></span>
                   </div>
                 </div>
             </div>

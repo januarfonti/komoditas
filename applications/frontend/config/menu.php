@@ -30,8 +30,8 @@ $config['menu'] = array(
 
 	'tentang' => array(
 		'name'      => 'Tentang Sikompa',
-		'url'       => site_url(),
-		'icon'      => 'fa fa-users'
+		'url'       => site_url('tentang'),
+		'icon'      => 'fa fa-info-circle'
 	),
 
 	'berita' => array(
@@ -42,7 +42,7 @@ $config['menu'] = array(
 
 	'kontak' => array(
 		'name'      => 'Kontak',
-		'url'       => site_url(),
+		'url'       => site_url('kontak'),
 		'icon'      => 'fa fa-envelope'
 	),
 

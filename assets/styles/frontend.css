@@ -7219,3 +7219,26 @@ div.pp_default .pp_details, div.light_rounded .pp_details, div.dark_rounded .pp_
   height: 250px;
 
 }
+
+.panel-danger .panel-heading
+{
+  background-color: #D9534F;
+  color: #f5f5f5;
+}
+
+.panel-success .panel-heading
+{
+  background-color: #8BC24A;
+  color: #f5f5f5;
+}
+
+.panel-info .panel-heading
+{
+  background-color: #4a74c2;
+  color: #f5f5f5;
+}
+
+.panel-harga
+{
+  font-size: 25px;
+}

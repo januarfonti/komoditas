@@ -53,6 +53,18 @@ $config['menu'] = array(
 		'url'       => site_url('admin'),
 		'icon'      => 'fa fa-users'
 	),
+
+	'tentang' => array(
+		'name'      => 'Halaman Tentang Sikompa',
+		'url'       => site_url('tentang'),
+		'icon'      => 'fa fa-info-circle'
+	),
+
+	'kontak' => array(
+		'name'      => 'Halaman Kontak',
+		'url'       => site_url('kontak'),
+		'icon'      => 'fa fa-envelope'
+	),
 	/*
 	// Example to add sections with subpages
 	'example' => array(

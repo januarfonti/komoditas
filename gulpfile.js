@@ -199,4 +199,4 @@ gulp.task('build', ['scripts', 'cssmin']);
 gulp.task('rebuild', ['clean', 'copy', 'images', 'build']);
 
 // Default tasks
-gulp.task('default', ['rebuild', 'watch']);
+gulp.task('default', ['build', 'watch']);
