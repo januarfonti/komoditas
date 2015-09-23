@@ -27,7 +27,12 @@ $config['menu'] = array(
 			
 		)
 	),
-
+	
+	'tabel_harga_komoditas' => array(
+		'name'      => 'Tabel Harga Komoditas',
+		'url'       => site_url('tabel_harga_komoditas'),
+		'icon'      => 'fa fa-line-chart'
+	),
 	'tentang' => array(
 		'name'      => 'Tentang Sikompa',
 		'url'       => site_url('tentang'),

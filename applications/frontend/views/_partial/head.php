@@ -13,12 +13,21 @@
 	<link href="<?php echo base_url('assets/owl-carousel/css/owl.carousel.css'); ?>" rel="stylesheet" >
 	<link href="<?php echo base_url('assets/owl-carousel/css/owl.theme.default.min.css'); ?>" rel="stylesheet" >
 	<link href="<?php echo base_url('assets/datepicker/jquery.datetimepicker.css'); ?>" rel="stylesheet" >
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/bs/dt-1.10.9,af-2.0.0,fc-3.1.0,fh-3.0.0,kt-2.0.0,r-1.0.7,sc-1.3.0,se-1.0.1/datatables.min.css"/>
+  <link href="http://localhost/datatables/buttons/css/buttons.dataTables.css" rel="stylesheet" >
+
 	
 	<script src="<?php echo base_url('assets/dist/app.min.js'); ?>"></script>
 	<script src="<?php echo base_url('assets/owl-carousel/js/owl.carousel.min.js'); ?>"></script>
 	<script src="<?php echo base_url('assets/highchart/highcharts.js'); ?>"></script>
 	<script src="<?php echo base_url('assets/highchart/themes/gray-light.js'); ?>"></script>
 	<script src="<?php echo base_url('assets/datepicker/jquery.datetimepicker.js'); ?>"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/r/bs/dt-1.10.9,af-2.0.0,fc-3.1.0,fh-3.0.0,kt-2.0.0,r-1.0.7,sc-1.3.0,se-1.0.1/datatables.min.js"></script>
+  <script src="http://localhost/datatables/buttons/js/dataTables.buttons.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+  <script src="http://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+  <script src="http://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+  <script src="http://localhost/datatables/buttons/js/buttons.html5.js"></script>
   <script>
   $(function() {
     $("img.lazy").lazyload();

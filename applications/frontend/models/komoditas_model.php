@@ -132,6 +132,23 @@ class Komoditas_model extends CI_Model {
         return $this->db->get('tb_pasar')->result();
     }
 
+    function get_pasar_tabel()
+    {
+        $this->db->select('*');
+        $this->db->from('tb_pasar');
+        $this->db->order_by('nama_pasar','ASC');
+        return $this->db->get()->result();
+    }
+
+    function get_namapasar_tabel($id)
+    {
+        $this->db->select('*');
+        $this->db->from('tb_pasar');
+        $this->db->where('id_pasar',$id);
+        $this->db->order_by('nama_pasar','ASC');
+        return $this->db->get()->row();
+    }
+
     function get_tentang()
     {
         return $this->db->get('tb_tentang')->row();
@@ -164,6 +181,65 @@ class Komoditas_model extends CI_Model {
                                 AND a.`tgl_update` = (SELECT MAX(tb_hargakomoditas.`tgl_update`) FROM tb_hargakomoditas WHERE tb_hargakomoditas.`tgl_update` NOT IN (SELECT MAX(tb_hargakomoditas.`tgl_update`) FROM tb_hargakomoditas WHERE tb_hargakomoditas.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`) AND tb_hargakomoditas.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`)
                                 GROUP BY a.id_jenisbahanpokok
 
+                                ");
+        return $query->result();
+    }
+
+/*    function get_rataratahariini_tabel()
+    {
+        $query = $this->db->query("SELECT b.nama_bahan_pokok,a.id_jenisbahanpokok, b.nama_bahan_pokok, c.nama_jenis_bahan_pokok, ROUND(AVG(a.harga)) AS harga_ratarata, a.tgl_update, c.foto_jenis_bahan_pokok, a.satuan
+                                FROM
+                                tb_hargakomoditas a, tb_bahanpokok b, tb_jenisbahanpokok c
+                                WHERE
+                                b.`id_bahanpokok` = a.`id_bahanpokok` AND c.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`
+                                AND a.`tgl_update` = (SELECT MAX(tb_hargakomoditas.`tgl_update`) FROM tb_hargakomoditas WHERE tb_hargakomoditas.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`)
+                                GROUP BY a.id_jenisbahanpokok
+                                ORDER BY c.nama_jenis_bahan_pokok ASC
+                                ");
+        return $query->result();
+    }
+    */
+    
+    function get_rataratahariini_tabel()
+    {
+        $query = $this->db->query("SELECT b.nama_bahan_pokok, a.id_jenisbahanpokok, b.nama_bahan_pokok, c.nama_jenis_bahan_pokok, ROUND(AVG(a.harga)) AS harga_ratarata, a.tgl_update, c.foto_jenis_bahan_pokok, a.satuan
+                                FROM
+                                tb_hargakomoditas a, tb_bahanpokok b, tb_jenisbahanpokok c
+                                WHERE
+                                b.`id_bahanpokok` = a.`id_bahanpokok` AND c.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`
+                                AND a.`tgl_update` = (SELECT MAX(tb_hargakomoditas.`tgl_update`) FROM tb_hargakomoditas WHERE tb_hargakomoditas.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`)
+                                GROUP BY a.id_jenisbahanpokok
+                                ORDER BY c.nama_jenis_bahan_pokok ASC
+                                ");
+        return $query->result();
+    }
+
+    function get_rataratahariini_tabel_cari($tgl_awal,$id_pasar)
+    {
+        $query = $this->db->query("SELECT a.id_pasar, b.nama_bahan_pokok, a.id_jenisbahanpokok, b.nama_bahan_pokok, c.nama_jenis_bahan_pokok, ROUND(AVG(a.harga)) AS harga_ratarata, a.tgl_update, c.foto_jenis_bahan_pokok, a.satuan
+                                FROM
+                                tb_hargakomoditas a, tb_bahanpokok b, tb_jenisbahanpokok c
+                                WHERE
+                                b.`id_bahanpokok` = a.`id_bahanpokok` AND c.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`
+                                AND a.`tgl_update` = '$tgl_awal'
+                                AND a.id_pasar = $id_pasar
+                                GROUP BY a.id_jenisbahanpokok
+                                ORDER BY c.nama_jenis_bahan_pokok ASC
+                                ");
+        return $query->result();
+    }
+    
+    function get_ratarataharikemarin_tabel_cari($tgl_awal,$id_pasar)
+    {
+        $query = $this->db->query("SELECT a.id_jenisbahanpokok, b.nama_bahan_pokok, c.nama_jenis_bahan_pokok, ROUND(AVG(a.harga)) AS harga_ratarata, a.tgl_update, c.foto_jenis_bahan_pokok
+                                FROM
+                                tb_hargakomoditas a, tb_bahanpokok b, tb_jenisbahanpokok c
+                                WHERE
+                                b.`id_bahanpokok` = a.`id_bahanpokok` AND c.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`
+                                AND a.`tgl_update` = (SELECT MAX(tb_hargakomoditas.`tgl_update`) FROM tb_hargakomoditas WHERE tb_hargakomoditas.`tgl_update` NOT BETWEEN '$tgl_awal' AND (SELECT MAX(tb_hargakomoditas.`tgl_update`) FROM tb_hargakomoditas WHERE tb_hargakomoditas.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`) AND tb_hargakomoditas.`id_jenisbahanpokok` = a.`id_jenisbahanpokok`)
+                                AND a.id_pasar = $id_pasar
+                                GROUP BY a.id_jenisbahanpokok
+                                ORDER BY c.nama_jenis_bahan_pokok ASC
                                 ");
         return $query->result();
     }

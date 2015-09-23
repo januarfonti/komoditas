@@ -193,7 +193,7 @@ gulp.task('watch', function() {
 });
 
 // Build scripts only
-gulp.task('build', ['scripts', 'cssmin']);
+gulp.task('build', ['scripts', 'cssmin','images']);
 
 // Clean up and build all
 gulp.task('rebuild', ['clean', 'copy', 'images', 'build']);

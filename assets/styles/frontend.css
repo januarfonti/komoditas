@@ -171,6 +171,10 @@
   background: url("../images/news.jpg") no-repeat center 0 fixed;
 }
 
+.cover-3-bg {
+  background: url("../images/stripes.jpg") no-repeat center 0 fixed;
+}
+
 
 .tile-1-bg {
   background: url("../images/tile.png") repeat center 0 fixed;
@@ -1272,10 +1276,7 @@ label {
   color: rgba(0, 0, 0, 0.2);
   width: 1em;
 }
-
-.form-inline {
-  font-size: 0;
-}
+  
 
 .form-control:focus {
   border-color: #E7214C;
