@@ -4,16 +4,140 @@
 		"selected_items":
 		[
 			[
+				"war",
+				"warna-stabil"
+			],
+			[
 				"data",
-				"data_pasar"
+				"data_ratarataharikemarin"
+			],
+			[
+				"ta",
+				"tabel-harga"
+			],
+			[
+				"nama_",
+				"nama_pasar"
+			],
+			[
+				"id",
+				"id_pasar"
+			],
+			[
+				"id_",
+				"id_pasar"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"the",
+				"thead	Tag"
+			],
+			[
+				"tgl_",
+				"tgl_update"
+			],
+			[
+				"Tangga",
+				"TanggalIndo"
+			],
+			[
+				"Tang",
+				"TanggalIndo"
 			],
 			[
 				"tgl",
 				"tgl_awal"
 			],
 			[
-				"tgl_",
-				"tgl_akhir"
+				"Tan",
+				"TanggalIndo"
+			],
+			[
+				"s",
+				"style	Attr"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"har",
+				"harga_ratarata"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"style",
+				"style_harga"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"border-ra",
+				"border-radius"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"bor",
+				"border-color"
+			],
+			[
+				"tota",
+				"totalRec"
+			],
+			[
+				"va",
+				"val"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"Berita",
+				"Berita_model"
+			],
+			[
+				"wih",
+				"width"
+			],
+			[
+				"val",
+				"val2"
+			],
+			[
+				"da",
+				"data_ratarataharikemarin"
+			],
+			[
+				"PRINT",
+				"print_r"
+			],
+			[
+				"e",
+				"echo	echo \"…\""
+			],
+			[
+				"ret",
+				"return"
 			],
 			[
 				"tg",
@@ -30,14 +154,6 @@
 			[
 				"fun",
 				"function"
-			],
-			[
-				"id",
-				"id_jenisbahanpokok"
-			],
-			[
-				"id_",
-				"id_pasar"
 			],
 			[
 				"print",
@@ -60,14 +176,6 @@
 				"color"
 			],
 			[
-				"bor",
-				"border"
-			],
-			[
-				"font",
-				"font-size"
-			],
-			[
 				"text",
 				"text-align"
 			],
@@ -76,16 +184,8 @@
 				"text-align"
 			],
 			[
-				"mar",
-				"margin-bottom"
-			],
-			[
 				"base",
 				"base_url"
-			],
-			[
-				"marg",
-				"margin-top"
 			],
 			[
 				"bac",
@@ -120,10 +220,6 @@
 				"action	Attr"
 			],
 			[
-				"fo",
-				"form	Tag"
-			],
-			[
 				"stemmer",
 				"stemmer_jawaban_mhs"
 			],
@@ -144,44 +240,247 @@
 	"buffers":
 	[
 		{
-			"file": "applications/frontend/views/detail_bahanpokok.php",
+			"file": "applications/frontend/models/komoditas_model.php",
 			"settings":
 			{
-				"buffer_size": 4812,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "applications/frontend/controllers/bahanpokok.php",
-			"settings":
-			{
-				"buffer_size": 1907,
+				"buffer_size": 16977,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "applications/frontend/views/caritanggal_bahanpokok.php",
+			"file": "applications/frontend/views/tabel_harga_komoditas.php",
 			"settings":
 			{
-				"buffer_size": 4688,
+				"buffer_size": 6785,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/janua/AppData/Local/Temp/scp49799/home/belajar/release/application/views/auth/form_register.php",
+			"settings":
+			{
+				"buffer_size": 8942,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/Ionic Apps/NomadenCoffee/plugins/com.phonegap.plugins.PushPlugin/src/android/com/plugin/gcm/GCMIntentService.java",
+			"settings":
+			{
+				"buffer_size": 4732,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "Package Control Messages\n========================\n\nMaterial Theme:\n--------------\n\n  ___  ___      _            _       _       _____ _\n  |  \\/  |     | |          (_)     | |     |_   _| |\n  | .  . | __ _| |_ ___ _ __ _  __ _| |       | | | |__   ___ _ __ ___   ___\n  | |\\/| |/ _` | __/ _ \\ '__| |/ _` | |       | | | '_ \\ / _ \\ '_ ` _ \\ / _ \\\n  | |  | | (_| | ||  __/ |  | | (_| | |       | | | | | |  __/ | | | | |  __/\n  \\_|  |_/\\__,_|\\__\\___|_|  |_|\\__,_|_|       \\_/ |_| |_|\\___|_| |_| |_|\\___|\n  \n  Material Theme for Sublime Text 3\n  https://github.com/equinusocio/material-theme for more info\n  \n  ******************************************************************************\n  \n  \n  To activate this awesome theme, add in your current settings this code:\n  \n  {\n      \"theme\": \"Material-Theme.sublime-theme\",\n      \"color_scheme\": \"Packages/Material Theme/schemes/Material-Theme.tmTheme\",\n  }\n  \n  \n  MAKE SURE TO RESTART SUBLIME AFTER ACTIVATING THE THEME\n  ******************************************************************************\n  \n  \n  You can set the alternative darker version with this:\n  \n  {\n      \"theme\": \"Material-Theme-Darker.sublime-theme\",\n      \"color_scheme\": \"Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme\",\n  \n  }\n  \n  ******************************************************************************\n  \n  \n  Recommended UI and font settings:\n  I suggest you to use this custom settings for a better experience with the theme:\n  \n  {\n      \"overlay_scroll_bars\": \"enabled\",\n      \"line_padding_top\": 3,\n      \"line_padding_bottom\": 3,\n      // On retina Mac\n      \"font_options\": [ \"gray_antialias\" ],\n      \"always_show_minimap_viewport\": true,\n      \"bold_folder_labels\": true,\n      // Highlight active indent\n      \"indent_guide_options\": [ \"draw_normal\", \"draw_active\" ]\n  }\n  \n  ******************************************************************************\n  \n  ",
+			"file": "/D/Ionic Apps/NomadenCoffee/www/js/app.js",
 			"settings":
 			{
-				"buffer_size": 1918,
+				"buffer_size": 1685,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/Ionic Apps/NomadenCoffee/server/ionic-gcm.js",
+			"settings":
+			{
+				"buffer_size": 1489,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/Ionic Apps/NomadenCoffee/www/js/services/RequestService.js",
+			"settings":
+			{
+				"buffer_size": 662,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/API KEY NOMADEN.TXT",
+			"settings":
+			{
+				"buffer_size": 39,
+				"line_ending": "Windows",
+				"name": "AIzaSyCjTCgZuiFcioLvP_2LURbfWDD4RVRnfcc"
+			}
+		},
+		{
+			"contents": "<?php\n \n// API access key from Google API's Console\ndefine( 'API_ACCESS_KEY', 'AIzaSyDlA2pGI3kzWQ4LA4wh2IypyUeYsscytIA' );\n \n$registrationIds = array( $_GET['id'] );\n \n// prep the bundle\n$msg = array\n(\n	'message' 	=> 'New Message',\n	'title'		=> 'Title',\n	'subtitle'	=> 'Subtitle',\n	'tickerText'	=> 'Ticker Text',\n	'vibrate'	=> 1,\n	'sound'		=> 1,\n	'largeIcon'	=> 'large_icon',\n	'smallIcon'	=> 'small_icon'\n);\n \n$fields = array\n(\n	'registration_ids' 	=> $registrationIds,\n	'data'			=> $msg\n);\n \n$headers = array\n(\n	'Authorization: key=' . API_ACCESS_KEY,\n	'Content-Type: application/json'\n);\n \n$ch = curl_init();\ncurl_setopt( $ch,CURLOPT_URL, 'https://android.googleapis.com/gcm/send' );\ncurl_setopt( $ch,CURLOPT_POST, true );\ncurl_setopt( $ch,CURLOPT_HTTPHEADER, $headers );\ncurl_setopt( $ch,CURLOPT_RETURNTRANSFER, true );\ncurl_setopt( $ch,CURLOPT_SSL_VERIFYPEER, false );\ncurl_setopt( $ch,CURLOPT_POSTFIELDS, json_encode( $fields ) );\n$result = curl_exec($ch );\ncurl_close( $ch );\n \necho $result;\n \n?>",
+			"file": "/C/xampp/htdocs/nomadencoffee/push.php",
+			"file_size": 0,
+			"file_write_time": 130877440488299911,
+			"settings":
+			{
+				"buffer_size": 1002,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Ionic Apps/push/www/js/app.js",
+			"settings":
+			{
+				"buffer_size": 2620,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/Ionic Apps/push-1/platforms/android/res/values/pushbots.xml",
+			"settings":
+			{
+				"buffer_size": 305,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/Ionic Apps/push-2/www/js/app.js",
+			"settings":
+			{
+				"buffer_size": 215,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/Ionic Apps/push-2/www/js/controllers.js",
+			"settings":
+			{
+				"buffer_size": 7765,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/Ionic Apps/push-2/www/js/services.js",
+			"settings":
+			{
+				"buffer_size": 575,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/Ionic Apps/push-2/sendGCM.js",
+			"settings":
+			{
+				"buffer_size": 1297,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/janua/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/Ionic Apps/push-1/www/js/app.js",
+			"settings":
+			{
+				"buffer_size": 215,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/Ionic Apps/push-1/www/index.html",
+			"settings":
+			{
+				"buffer_size": 1716,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/Ionic Apps/push/www/js/services.js",
+			"settings":
+			{
+				"buffer_size": 1320,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/Ionic Apps/push/www/js/controllers.js",
+			"settings":
+			{
+				"buffer_size": 2222,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/Ionic Apps/NomadenCoffee/platforms/android/src/com/plugin/gcm/GCMIntentService.java",
+			"settings":
+			{
+				"buffer_size": 4732,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "(function(){\n\n	angular.module('starter')\n	.service('RequestsService', ['$http', '$q', '$ionicLoading',  RequestsService]);\n\n	function RequestsService($http, $q, $ionicLoading){\n\n		//for server\n		var base_url = 'your-server.com';\n\n		function register(device_token){\n\n			var deferred = $q.defer();\n			$ionicLoading.show();\n\n			$http.post(base_url + '/register', {'device_token': device_token})\n				.success(function(response){\n					\n					$ionicLoading.hide();\n					deferred.resolve(response);\n					\n				})\n				.error(function(data){\n					deferred.reject();	\n				});\n			\n\n			return deferred.promise;			\n\n		};\n\n\n		return {\n			register: register\n		};\n	}\n})();",
+			"file": "/D/Ionic Apps/NomadenCoffee/www/js/services/RequestServices.js",
+			"file_size": 690,
+			"file_write_time": 130875565429672085,
+			"settings":
+			{
+				"buffer_size": 654,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Ionic Apps/NomadenCoffee/www/index.html",
+			"settings":
+			{
+				"buffer_size": 1116,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nMaterial Theme\n--------------\n\n  Material Theme for Sublime Text 3\n  https://github.com/equinusocio/material-theme\n  \n  \n  Version 1.8.7\n  ********************************************************************************\n  \n  #### UI IMPROVEMENTS\n  \n  	- Minor UI improvements\n  	- Add new setting to set the tabs with to auto (the max-width will remain) (\"material_theme_tabs_autowidth\": true). NOTE: This setting may require restart.\n  \n  #### COLOR SCHEME\n  	\n  	- Color highlight improvements\n",
+			"settings":
+			{
+				"buffer_size": 547,
 				"line_ending": "Windows",
 				"name": "Package Control Messages",
+				"read_only": true,
 				"scratch": true
 			}
 		},
 		{
-			"file": "applications/frontend/models/komoditas_model.php",
+			"file": "applications/frontend/views/_partial/head.php",
 			"settings":
 			{
-				"buffer_size": 4623,
+				"buffer_size": 5211,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "applications/frontend/views/data_pasar.php",
+			"settings":
+			{
+				"buffer_size": 11638,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "applications/frontend/views/detail_bahanpokok.php",
+			"settings":
+			{
+				"buffer_size": 6162,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/styles/frontend.css",
+			"settings":
+			{
+				"buffer_size": 149918,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');\n\nclass Tabel_harga_komoditas extends MY_Controller {\n\n	public function index()\n	{\n		$this->mLayout                               = \"home\";\n		$this->mTitle                                = \"Tabel Harga Komoditas\";\n		$this->mViewFile                             = 'tabel_harga_komoditas';\n		$this->mViewData['data_rataratahariini']     = $this->Komoditas_model->get_rataratahariini_tabel();\n		$this->mViewData['data_ratarataharikemarin'] = $this->Komoditas_model->get_ratarataharikemarin();\n		$this->mViewData['data_pasar']              = $this->Komoditas_model->get_pasar_tabel();\n	}\n\n	public function cari()\n	{\n		$tgl_awal                                    = $this->input->post('tgl_awal');\n		$id_pasar                                    = $this->input->post('id_pasar');\n		$this->mLayout                               = \"home\";\n		$this->mTitle                                = \"Tabel Harga Komoditas\";\n		$this->mViewFile                             = 'tabel_harga_komoditas';\n		$this->mViewData['data_rataratahariini']     = $this->Komoditas_model->get_rataratahariini_tabel_cari($tgl_awal,$id_pasar);\n		$this->mViewData['data_ratarataharikemarin'] = $this->Komoditas_model->get_ratarataharikemarin_tabel_cari($tgl_awal,$id_pasar);\n		$this->mViewData['data_pasar']               = $this->Komoditas_model->get_pasar_tabel();\n		$this->mViewData['tgl_awal']                 = $tgl_awal;\n		$this->mViewData['nama_pasar']               = $this->Komoditas_model->get_namapasar_tabel($id_pasar);\n\n	}\n}",
+			"file": "applications/frontend/controllers/tabel_harga_komoditas.php",
+			"file_size": 1573,
+			"file_write_time": 130874202064797165,
+			"settings":
+			{
+				"buffer_size": 1571,
 				"line_ending": "Unix"
 			}
 		}
@@ -263,134 +562,134 @@
 	],
 	"file_history":
 	[
-		"/C/Users/janua/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/xampp/htdocs/komoditas/applications/backend/controllers/komoditas.php",
-		"/C/Users/janua/AppData/Local/Temp/scp59879/home/belajar/release/application/controllers/auth.php",
-		"/C/Users/janua/AppData/Local/Temp/scp05527/home/smuet/webservice/application/controllers/login.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/views/_partial/head.php",
-		"/C/xampp/htdocs/komoditas/assets/datepicker/jquery.datetimepicker.js",
-		"/C/xampp/htdocs/komoditas/assets/datepicker/jquery.datetimepicker.css",
-		"/C/Users/janua/AppData/Local/Temp/scp09511/home/belajar/release/application/views/dosen/description_baru.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/views/_partial/header.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/views/_layouts/default.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/views/_partial/menu.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/views/_partial/menu_right.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/views/detail_bahanpokok.php",
-		"/C/Users/janua/AppData/Local/Temp/scp59056/home/belajar/release/application/views/auth/login.php",
-		"/C/Users/janua/AppData/Local/Temp/scp05988/home/belajar/release/application/views/wrapper_dosen/content_wrapper_bs.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/config/config.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/config/menu_member.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/config/profiler.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/config/config.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/config/hooks.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/config/profiler.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/config/production/database.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/config/production/database.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/config/menu.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/views/home.php",
-		"/C/xampp/htdocs/komoditas/system/helpers/html_helper.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/config/autoload.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/config/autoload.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/controllers/home.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/controllers/account.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/views/account.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/controllers/admin.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/helpers/alert_helper.php",
-		"/C/xampp/htdocs/komoditas/system/helpers/inflector_helper.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/models/komoditas_model.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/controllers/bahanpokok.php",
-		"/C/Users/janua/AppData/Local/Temp/scp05707/home/belajar/release/application/views/wrapper_dosen/content_wrapper.php",
-		"/C/xampp/htdocs/komoditas/assets/datepicker/js/bootstrap-datepicker.js",
-		"/C/Users/janua/AppData/Local/Temp/scp07723/home/smuet/webservice/application/models/model_mk.php",
-		"/C/xampp/htdocs/skripsirani/perhitungan.php",
-		"/C/Users/janua/Dropbox/skripsi (1)/Program/skripsirani/perhitungan.php",
-		"/C/xampp/htdocs/highchart/examples/line-basic/index.htm",
-		"/C/xampp/htdocs/komoditas/assets/dist/style.css",
+		"/D/Ionic Apps/push-1/www/js/controller.js",
+		"/C/Program Files/Java/jre1.8.0_51/bin/nomadencoffee.keystore",
+		"/C/xampp/htdocs/komoditas/bower_components/Buttons/js/dataTables.buttons.js",
+		"/C/xampp/htdocs/komoditas/bower_components/Buttons/css/buttons.dataTables.css",
+		"/C/xampp/htdocs/komoditas/bower_components/Buttons/css/buttons.bootstrap.css",
+		"/C/xampp/htdocs/komoditas/gulpfile.js",
 		"/C/xampp/htdocs/komoditas/applications/frontend/views/home.php",
-		"/C/Users/janua/AppData/Local/Temp/scp48417/home/belajar/release/application/controllers/auth.php",
-		"/C/Users/janua/AppData/Local/Temp/scp48723/home/belajar/release/application/views/auth/form_register.php",
-		"/C/Users/janua/AppData/Local/Temp/scp09338/home/smuet/webservice/application/controllers/admin.php",
-		"/C/Users/janua/AppData/Local/Temp/scp54612/home/smuet/webservice/application/models/model_user.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/controllers/berita.php",
 		"/C/xampp/htdocs/komoditas/applications/frontend/views/berita.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/detail_berita.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/views/login.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/controllers/tentang.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/controllers/kontak.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/controllers/berita1.php",
 		"/C/xampp/htdocs/komoditas/applications/frontend/controllers/berita.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/models/user_model.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/controllers/detail_bahanpokok.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/views/_layouts/home.php",
-		"/C/Users/janua/AppData/Local/Temp/Rar$DIa0.267/owl.autoplay.js",
-		"/C/xampp/htdocs/komoditas/assets/owl-carousel/js/owl.carousel.min.js",
-		"/C/Users/janua/AppData/Local/Temp/scp50902/home/belajar/release/application/config/config.php",
-		"/C/Users/janua/AppData/Local/Temp/scp51977/home/belajar/betha/application/config/config.php",
-		"/C/Users/janua/AppData/Local/Temp/scp53277/home/belajar/betha/index.php",
-		"/C/Users/janua/AppData/Local/Temp/scp57748/home/belajar/release/.htaccess",
-		"/C/Users/janua/AppData/Local/Temp/scp58551/home/belajar/release/.psw",
-		"/C/xampp/htdocs/komoditas/assets/styles/frontend.css",
-		"/C/Users/janua/AppData/Local/Temp/scp06066/home/belajar/betha/application/controllers/admin.php",
-		"/C/xampp/htdocs/komoditas/assets/dist/app.min.css",
-		"/C/xampp/htdocs/komoditas/assets/dist/slider.css",
-		"/C/xampp/htdocs/komoditas/applications/frontend/views/_partial/foot.php",
-		"/C/Users/janua/AppData/Local/Temp/scp26818/home/smuet/webservice/application/models/model_mk.php",
-		"/C/xampp/htdocs/komoditas/assets/dist/app.min.js",
-		"/C/Users/janua/AppData/Local/Temp/scp02643/home/belajar/betha/application/views/admin/tambah_matkul.php",
-		"/C/Users/janua/AppData/Local/Temp/scp09682/home/smuet/webservice/application/models/model_instansi.php",
-		"/C/Users/janua/AppData/Local/Temp/scp17829/home/belajar/betha/application/views/admin/daftar_matakuliah.php",
-		"/C/Users/janua/AppData/Local/Temp/scp20851/home/belajar/betha/application/controllers/mahasiswa.php",
-		"/C/Users/janua/AppData/Local/Temp/scp24715/home/smuet/webservice/application/controllers/mahasiswa.php",
-		"/C/Users/janua/AppData/Local/Temp/scp20516/home/belajar/betha/application/controllers/dosen.php",
-		"/C/Users/janua/AppData/Local/Temp/scp53719/home/belajar/betha/application/views/auth/login-backup.php",
-		"/C/Users/janua/AppData/Local/Temp/scp38164/home/belajar/betha/application/views/depan/daftar_kampus.php",
-		"/C/Users/janua/AppData/Local/Temp/scp19525/home/belajar/betha/application/views/depan/daftar_kelas.php",
-		"/C/Users/janua/AppData/Local/Temp/scp37517/home/belajar/betha/application/controllers/kelas.php",
-		"/C/Users/janua/AppData/Local/Temp/scp12409/home/belajar/betha/application/views/depan/wrapper.php",
-		"/C/Users/janua/AppData/Local/Temp/scp27858/home/belajar/betha/assets/jf/css/style-login.css",
-		"/C/Users/janua/AppData/Local/Temp/scp53740/home/belajar/betha/application/views/auth/login-1.php",
-		"/C/Users/janua/AppData/Local/Temp/scp38277/home/belajar/betha/application/views/auth/form_register.php",
-		"/C/Users/janua/AppData/Local/Temp/scp39622/home/smuet/webservice/application/controllers/login.php",
-		"/C/Users/janua/AppData/Local/Temp/scp31664/home/belajar/betha/application/controllers/auth.php",
-		"/C/Users/janua/AppData/Local/Temp/scp19569/home/belajar/betha/application/views/dosen/jawaban_mahasiswa.php",
-		"/C/Users/janua/AppData/Local/Temp/scp18732/home/belajar/betha/application/views/admin/tambah_matkul.php",
-		"/C/Users/janua/AppData/Local/Temp/scp03641/home/smuet/webservice/application/models/model_matkul.php",
-		"/C/Users/janua/AppData/Local/Temp/scp03043/home/smuet/webservice/application/models/model_instansi.php",
-		"/C/Users/janua/AppData/Local/Temp/scp59052/home/smuet/webservice/application/controllers/admin.php",
-		"/C/Users/janua/AppData/Local/Temp/scp14787/home/belajar/betha/application/controllers/admin.php",
-		"/C/Users/janua/AppData/Local/Temp/scp28472/home/belajar/betha/application/controllers/faq.php",
-		"/C/Users/janua/AppData/Local/Temp/scp28072/home/belajar/betha/application/controllers/kampus.php",
-		"/C/Users/janua/AppData/Local/Temp/scp27682/home/belajar/betha/application/views/depan/faq.php",
-		"/C/Users/janua/AppData/Local/Temp/scp17807/home/belajar/betha/application/views/admin/tambah_instansi.php",
-		"/C/Users/janua/AppData/Local/Temp/scp10271/home/belajar/betha/application/views/admin/daftar_matakuliah.php",
-		"/C/Users/janua/AppData/Local/Temp/scp10470/home/belajar/betha/application/views/mahasiswa/challange_mahasiswa.php",
-		"/C/Users/janua/AppData/Local/Temp/scp36041/home/belajar/betha/application/views/admin/instansi.php",
-		"/C/Users/janua/AppData/Local/Temp/scp04151/home/belajar/betha/application/views/dosen/list_matkul_dosen.php",
-		"/C/Users/janua/AppData/Local/Temp/scp53753/home/smuet/webservice/application/models/model_depan.php",
-		"/C/Users/janua/AppData/Local/Temp/scp53485/home/smuet/webservice/application/config/autoload.php",
-		"/C/Users/janua/AppData/Local/Temp/scp50283/home/smuet/webservice/application/controllers/depan.php",
-		"/C/Users/janua/AppData/Local/Temp/scp12640/home/belajar/betha/application/views/auth/login.php",
-		"/C/Users/janua/AppData/Local/Temp/scp17028/home/belajar/betha/application/controllers/dosen.php",
-		"/C/Users/janua/AppData/Local/Temp/scp51377/home/belajar/betha/application/controllers/depan.php",
-		"/C/Users/janua/AppData/Local/Temp/scp47686/home/smuet/webservice/application/controllers/user.php",
-		"/C/Users/janua/AppData/Local/Temp/scp11518/home/belajar/betha/application/views/wrapper_dosen/content_wrapper_bs.php",
-		"/C/xampp/htdocs/komoditas/system/helpers/language_helper.php",
 		"/C/xampp/htdocs/komoditas/applications/backend/config/menu_admin.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/views/_layouts/default.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/views/_partial/header.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/helpers/auth_helper.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/controllers/pasar.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/controllers/jenis_bahanpokok.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/controllers/account.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/controllers/admin.php",
 		"/C/xampp/htdocs/komoditas/applications/backend/controllers/bahan_pokok.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/views/_partial/footer.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/config/crud.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/controllers/home.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/language/en/general_lang.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/language/cn/general_lang.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/controllers/berita.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/controllers/error.php",
 		"/C/xampp/htdocs/komoditas/applications/backend/controllers/example.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/views/_partial/back.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/views/example/demo.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/controllers/example.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/controllers/account.php",
-		"/C/xampp/htdocs/komoditas/applications/frontend/models/berita_model.php",
-		"/C/xampp/htdocs/komoditas/applications/backend/controllers/user.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/controllers/home.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/controllers/jenis_bahanpokok.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/controllers/komoditas.php",
 		"/C/xampp/htdocs/komoditas/applications/backend/controllers/login.php",
-		"/C/xampp/htdocs/grocery/application/controllers/examples.php"
+		"/C/xampp/htdocs/komoditas/applications/backend/views/_partial/footer.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/cari_tanggal_pasar.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/controllers/tabel_harga_komoditas.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/data_pasar.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/controllers/pasar.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/controllers/user.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/core/MY_Controller.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/sidebar.php",
+		"/C/xampp/htdocs/komoditas/assets/styles/frontend.css",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/_partial/foot.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/config/menu.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/controllers/tentang.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/tentang.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/kontak.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/controllers/kontak.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/production/database.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/autoload.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/config.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/constants.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/crud.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/database.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/doctypes.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/email.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/foreign_chars.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/form_validation.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/grocery_crud.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/hooks.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/image_crud.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/menu_staff.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/migration.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/mimes.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/profiler.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/routes.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/smileys.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/config/user_agents.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/helpers/auth_helper.php",
+		"/C/xampp/htdocs/komoditas/system/core/Config.php",
+		"/C/xampp/htdocs/komoditas/system/core/Router.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/detail_bahanpokok.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/caritanggal_bahanpokok.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/helpers/tanggal_helper.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/controllers/bahanpokok.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/models/komoditas_model.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/models/berita_model.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/ajax-pagination-data.php",
+		"/C/Users/janua/AppData/Local/Temp/scp04788/home/belajar/release/application/libraries/Ajax_pagination.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/libraries/Ajax_pagination.php",
+		"/C/Users/janua/AppData/Local/Temp/scp05532/home/belajar/release/application/controllers/kampus.php",
+		"/C/Users/janua/AppData/Local/Temp/scp05862/home/belajar/release/application/controllers/kelas.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/controllers/home.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/config/config.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/config/production/database.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/_partial/head.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/language/en/general_lang.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/_layouts/home.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/_layouts/kosong.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/controllers/pasar.php",
+		"/C/xampp/htdocs/komoditas/assets/highchart/highcharts.js",
+		"/C/xampp/htdocs/komoditas/assets/dist/app.min.js",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/_partial/menu.php",
+		"/C/xampp/htdocs/komoditas/bower_components/jquery_lazyload/jquery.lazyload.js",
+		"/C/xampp/htdocs/komoditas/assets/dist/app.min.css",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/_partial/header.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/controllers/beritaa.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/_layouts/empty.php",
+		"/C/Users/janua/AppData/Local/Temp/scp14256/home/belajar/release/application/views/auth/login.php",
+		"/C/Users/janua/AppData/Local/Temp/scp14641/home/belajar/release/application/controllers/auth.php",
+		"/C/Users/janua/AppData/Local/Temp/scp14961/home/smuet/webservice/application/controllers/login.php",
+		"/C/Users/janua/AppData/Local/Temp/scp20528/home/smuet/webservice/application/controllers/mahasiswa.php",
+		"/C/Users/janua/AppData/Local/Temp/scp22312/home/belajar/release/application/controllers/mahasiswa.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/views/home.php",
+		"/C/xampp/htdocs/komoditas/applications/backend/helpers/MY_html_helper.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/helpers/MY_html_helper.php",
+		"/C/xampp/htdocs/komoditas/assets/dist/backend.min.css",
+		"/C/xampp/htdocs/komoditas/applications/frontend/language/zh/general_lang.php",
+		"/C/xampp/htdocs/helena/index.php",
+		"/C/xampp/htdocs/komoditas - Copy/applications/frontend/views/_partial/menu.php",
+		"/C/xampp/htdocs/komoditas - Copy/applications/frontend/views/_partial/header.php",
+		"/C/xampp/htdocs/komoditas - Copy/applications/frontend/views/_partial/head.php",
+		"/C/xampp/htdocs/komoditas - Copy/applications/frontend/views/_layouts/home.php",
+		"/C/xampp/htdocs/komoditas/bower_components/roboto/roboto.css",
+		"/C/xampp/htdocs/komoditas/applications/frontend/helpers/alert_helper.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/config/autoload.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/helpers/MY_url_helper.php",
+		"/C/xampp/htdocs/komoditas/assets/js/frontend.js",
+		"/C/xampp/htdocs/komoditas/bower_components/summernote/examples/lang.html",
+		"/C/xampp/htdocs/helena/uikit/css/uikit.css",
+		"/C/xampp/htdocs/helena/uikit/js/uikit.js",
+		"/C/xampp/htdocs/komoditas/applications/backend/views/email/_footer.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/_layouts/default.php",
+		"/C/xampp/htdocs/helena/blog.html",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/_partial/sidebar.php",
+		"/C/xampp/htdocs/komoditas/applications/frontend/views/_partial/menu_right.php",
+		"/C/Users/janua/AppData/Local/Temp/scp36556/home/belajar/release/application/views/depan/ajax-pagination-data.php",
+		"/C/Users/janua/AppData/Local/Temp/scp41348/home/belajar/release/application/views/depan/daftar_kelas.php",
+		"/C/Users/janua/AppData/Local/Temp/scp42778/home/belajar/release/application/libraries/Ajax_pagination.php",
+		"/C/Users/janua/AppData/Local/Temp/scp23943/home/belajar/release/application/controllers/kelas.php",
+		"/C/Users/janua/AppData/Local/Temp/scp47124/home/belajar/release/application/controllers/dosen.php",
+		"/C/Users/janua/AppData/Local/Temp/scp35041/home/smuet/webservice/application/controllers/depan.php",
+		"/C/Users/janua/AppData/Local/Temp/scp47747/home/smuet/webservice/application/controllers/dosen.php",
+		"/C/Users/janua/AppData/Local/Temp/scp22914/home/smuet/webservice/application/models/model_depan.php",
+		"/C/Users/janua/AppData/Local/Temp/scp31261/home/belajar/release/application/config/autoload.php",
+		"/C/Users/janua/AppData/Local/Temp/scp23619/home/belajar/release/application/controllers/mahasiswa.php"
 	],
 	"find":
 	{
@@ -408,6 +707,32 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"project",
+			"url",
+			"swf",
+			"import",
+			"sans",
+			"form-inline",
+			"inline",
+			"development",
+			"ENVIRONMENT",
+			"bulan",
+			"tgl",
+			"highcharts.com",
+			"caridetailharga",
+			"get_detailharga",
+			"footer",
+			"$key",
+			"info-box",
+			"loading",
+			"invert-colors",
+			"owl-stage-outer",
+			"url(\"Roboto",
+			"wrapper",
+			"kelas",
+			"material",
+			"default",
+			"member",
 			"reg",
 			"memb",
 			"reg",
@@ -432,6 +757,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"$data_berita",
+			"url(\"../fonts/Roboto"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -442,155 +769,866 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 15,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "applications/frontend/views/detail_bahanpokok.php",
+					"file": "applications/frontend/models/komoditas_model.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4812,
+						"buffer_size": 16977,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2750,
-								2750
+								16977,
+								16977
 							]
 						],
 						"settings":
 						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2168.0,
+						"translation.y": 6642.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "applications/frontend/views/tabel_harga_komoditas.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6785,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3662,
+								3662
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1779.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/janua/AppData/Local/Temp/scp49799/home/belajar/release/application/views/auth/form_register.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8942,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3557,
+								3557
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1528.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/Ionic Apps/NomadenCoffee/plugins/com.phonegap.plugins.PushPlugin/src/android/com/plugin/gcm/GCMIntentService.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4732,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3095,
+								3095
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2372.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/Ionic Apps/NomadenCoffee/www/js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1685,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1244,
+								1244
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1065.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/D/Ionic Apps/NomadenCoffee/server/ionic-gcm.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1489,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								158,
+								158
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/D/Ionic Apps/NomadenCoffee/www/js/services/RequestService.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 662,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								504,
+								504
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/D/API KEY NOMADEN.TXT",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 39,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								39,
+								39
+							]
+						],
+						"settings":
+						{
+							"auto_name": "AIzaSyCjTCgZuiFcioLvP_2LURbfWDD4RVRnfcc",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/xampp/htdocs/nomadencoffee/push.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1002,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								118,
+								118
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/D/Ionic Apps/push/www/js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2620,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1083,
+								1083
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 130.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/D/Ionic Apps/push-1/platforms/android/res/values/pushbots.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 305,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								210,
+								210
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/D/Ionic Apps/push-2/www/js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 215,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "applications/frontend/controllers/bahanpokok.php",
+					"buffer": 12,
+					"file": "/D/Ionic Apps/push-2/www/js/controllers.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1907,
+						"buffer_size": 7765,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1408,
-								1408
+								562,
+								562
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 240.0,
+						"translation.y": 753.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/D/Ionic Apps/push-2/www/js/services.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 575,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "applications/frontend/views/caritanggal_bahanpokok.php",
+					"buffer": 14,
+					"file": "/D/Ionic Apps/push-2/sendGCM.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4688,
+						"buffer_size": 1297,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4446,
-								4446
+								112,
+								151
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1843.0,
+						"translation.y": 75.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 15,
+					"file": "/C/Users/janua/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1918,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1479,
-								1828
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"auto_indent": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"word_wrap": true
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 409.0,
+						"translation.x": -0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "applications/frontend/models/komoditas_model.php",
+					"buffer": 16,
+					"file": "/D/Ionic Apps/push-1/www/js/app.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4623,
+						"buffer_size": 215,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2541,
-								2541
+								215,
+								215
 							]
 						],
 						"settings":
 						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "/D/Ionic Apps/push-1/www/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1716,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								722,
+								722
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 128.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "/D/Ionic Apps/push/www/js/services.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1320,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "/D/Ionic Apps/push/www/js/controllers.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2222,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								169,
+								169
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "/D/Ionic Apps/NomadenCoffee/platforms/android/src/com/plugin/gcm/GCMIntentService.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4732,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								294,
+								294
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2405.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "/D/Ionic Apps/NomadenCoffee/www/js/services/RequestServices.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 654,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								654,
+								654
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 81.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "/D/Ionic Apps/NomadenCoffee/www/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1116,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								385,
+								385
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 547,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								547,
+								547
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "applications/frontend/views/_partial/head.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5211,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1816,
+								1816
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 12.0,
+						"translation.y": 3058.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "applications/frontend/views/data_pasar.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11638,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5050,
+								5050
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 577.0,
+						"translation.y": 2456.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 26,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "applications/frontend/views/detail_bahanpokok.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6162,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5943,
+								6051
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3786.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "assets/styles/frontend.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 149918,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2121,
+								2121
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3685.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 28,
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "applications/frontend/controllers/tabel_harga_komoditas.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1571,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1508,
+								1508
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
 					"type": "text"
 				}
 			]
@@ -598,7 +1636,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 32.0
 	},
 	"input":
 	{
@@ -639,7 +1677,7 @@
 	"project": "komoditas.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 60.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -649,32 +1687,200 @@
 		"selected_items":
 		[
 			[
-				"cari",
-				"applications\\frontend\\views\\caritanggal_bahanpokok.php"
-			],
-			[
-				"bahan",
-				"applications\\frontend\\controllers\\bahanpokok.php"
+				"tabel",
+				"applications\\frontend\\controllers\\tabel_harga_komoditas.php"
 			],
 			[
 				"komo",
 				"applications\\frontend\\models\\komoditas_model.php"
 			],
 			[
-				"detai",
-				"applications\\frontend\\views\\detail_bahanpokok.php"
-			],
-			[
-				"detail",
-				"applications\\frontend\\views\\detail_bahanpokok.php"
-			],
-			[
 				"head",
 				"applications\\frontend\\views\\_partial\\head.php"
 			],
 			[
+				"data_pas",
+				"applications\\frontend\\views\\data_pasar.php"
+			],
+			[
+				"fr",
+				"assets\\styles\\frontend.css"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"deta",
+				"applications\\frontend\\views\\detail_bahanpokok.php"
+			],
+			[
+				"front",
+				"assets\\styles\\frontend.css"
+			],
+			[
+				"data_",
+				"applications\\frontend\\views\\data_pasar.php"
+			],
+			[
+				"cari",
+				"applications\\frontend\\views\\cari_tanggal_pasar.php"
+			],
+			[
+				"foot",
+				"applications\\backend\\views\\_partial\\footer.php"
+			],
+			[
+				"login",
+				"applications\\backend\\controllers\\login.php"
+			],
+			[
+				"menu",
+				"applications\\frontend\\config\\menu.php"
+			],
+			[
+				"kontak",
+				"applications\\frontend\\controllers\\kontak.php"
+			],
+			[
+				"detai",
+				"applications\\frontend\\views\\detail_berita.php"
+			],
+			[
+				"berita",
+				"applications\\frontend\\views\\berita.php"
+			],
+			[
+				"home",
+				"applications\\frontend\\views\\home.php"
+			],
+			[
+				"kom",
+				"applications\\frontend\\models\\komoditas_model.php"
+			],
+			[
+				"gu",
+				"gulpfile.js"
+			],
+			[
+				"bahan",
+				"applications\\frontend\\controllers\\bahanpokok.php"
+			],
+			[
+				"car",
+				"applications\\frontend\\views\\cari_tanggal_pasar.php"
+			],
+			[
+				"baha",
+				"applications\\frontend\\views\\detail_bahanpokok.php"
+			],
+			[
+				"data",
+				"applications\\frontend\\views\\data_pasar.php"
+			],
+			[
+				"ajax_",
+				"applications\\frontend\\libraries\\Ajax_pagination.php"
+			],
+			[
+				"beri",
+				"applications\\frontend\\views\\berita.php"
+			],
+			[
+				"pasar",
+				"applications\\frontend\\controllers\\pasar.php"
+			],
+			[
 				"header",
 				"applications\\frontend\\views\\_partial\\header.php"
+			],
+			[
+				"foo",
+				"applications\\frontend\\views\\_partial\\foot.php"
+			],
+			[
+				"hom",
+				"applications\\frontend\\views\\home.php"
+			],
+			[
+				"",
+				"applications\\frontend\\views\\detail_berita.php"
+			],
+			[
+				"detail",
+				"applications\\frontend\\views\\detail_berita.php"
+			],
+			[
+				"berita_m",
+				"applications\\frontend\\models\\berita_model.php"
+			],
+			[
+				"jenis",
+				"applications\\backend\\controllers\\jenis_bahanpokok.php"
+			],
+			[
+				"fro",
+				"assets\\styles\\frontend.css"
+			],
+			[
+				"back",
+				"assets\\dist\\backend.min.css"
+			],
+			[
+				"ny_ht",
+				"applications\\frontend\\helpers\\MY_html_helper.php"
+			],
+			[
+				"my_ht",
+				"applications\\backend\\helpers\\MY_html_helper.php"
+			],
+			[
+				"footer",
+				"applications\\backend\\views\\_partial\\footer.php"
+			],
+			[
+				"f",
+				"assets\\styles\\frontend.css"
+			],
+			[
+				"komodi",
+				"applications\\frontend\\models\\komoditas_model.php"
+			],
+			[
+				"lang",
+				"applications\\frontend\\language\\zh\\general_lang.php"
+			],
+			[
+				"auto",
+				"applications\\frontend\\config\\autoload.php"
+			],
+			[
+				"foote",
+				"applications\\backend\\views\\email\\_footer.php"
+			],
+			[
+				"depan",
+				"C:\\Users\\janua\\AppData\\Local\\Temp\\scp35041\\home\\smuet\\webservice\\application\\controllers\\depan.php"
+			],
+			[
+				"de",
+				"applications\\frontend\\views\\detail_bahanpokok.php"
+			],
+			[
+				"ko",
+				"applications\\frontend\\models\\komoditas_model.php"
+			],
+			[
+				"aut",
+				"applications\\frontend\\config\\autoload.php"
+			],
+			[
+				"config",
+				"C:\\Users\\janua\\AppData\\Local\\Temp\\scp36518\\home\\smuet\\webservice\\file_submission_mhs\\config.php"
+			],
+			[
+				"app",
+				"assets\\dist\\app.min.css"
 			],
 			[
 				"accou",
@@ -685,14 +1891,6 @@
 				"system\\helpers\\html_helper.php"
 			],
 			[
-				"home",
-				"applications\\backend\\controllers\\home.php"
-			],
-			[
-				"aut",
-				"applications\\frontend\\config\\autoload.php"
-			],
-			[
 				"autl",
 				"applications\\backend\\config\\autoload.php"
 			],
@@ -701,20 +1899,8 @@
 				"applications\\frontend\\controllers\\bahanpokok.php"
 			],
 			[
-				"berita",
-				"applications\\frontend\\views\\berita.php"
-			],
-			[
-				"beri",
-				"applications\\backend\\controllers\\berita.php"
-			],
-			[
 				"kam",
 				"C:\\Users\\janua\\AppData\\Local\\Temp\\scp38164\\home\\belajar\\betha\\application\\views\\depan\\daftar_kampus.php"
-			],
-			[
-				"depan",
-				"C:\\Users\\janua\\AppData\\Local\\Temp\\scp50283\\home\\smuet\\webservice\\application\\controllers\\depan.php"
 			],
 			[
 				"insta",
@@ -737,18 +1923,6 @@
 				"applications\\frontend\\models\\berita_model.php"
 			],
 			[
-				"auto",
-				"applications\\frontend\\config\\autoload.php"
-			],
-			[
-				"menu",
-				"applications\\frontend\\config\\menu.php"
-			],
-			[
-				"lang",
-				"system\\helpers\\language_helper.php"
-			],
-			[
 				"con",
 				"applications\\backend\\config\\config.php"
 			],
@@ -757,24 +1931,12 @@
 				"applications\\frontend\\config\\config.php"
 			],
 			[
-				"footer",
-				"applications\\backend\\views\\_partial\\footer.php"
-			],
-			[
 				"auth",
 				"applications\\frontend\\helpers\\auth_helper.php"
 			],
 			[
-				"login",
-				"applications\\backend\\controllers\\login.php"
-			],
-			[
 				"logi",
 				"applications\\backend\\controllers\\login.php"
-			],
-			[
-				"pasar",
-				"applications\\backend\\controllers\\pasar.php"
 			],
 			[
 				"adm",
@@ -783,10 +1945,6 @@
 			[
 				"tamba",
 				"application\\views\\admin\\tambah_pasar.php"
-			],
-			[
-				"data",
-				"application\\views\\admin\\data_pasar.php"
 			],
 			[
 				"tambah",

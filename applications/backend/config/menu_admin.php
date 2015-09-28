@@ -42,6 +42,28 @@ $config['menu'] = array(
 		'url'       => site_url('pasar'),
 		'icon'      => 'fa fa-simplybuilt'
 	),
+
+	'kecamatan' => array(
+		'name'      => 'Data Kecamatan',
+		'url'       => site_url('kecamatan'),
+		'icon'      => 'fa fa-university'
+	),
+
+	'data_produksi' => array(
+		'name'      => 'Data Produksi',
+		'url'       => site_url('data_produksi'),
+		'icon'      => 'fa fa-pie-chart'
+	),
+
+	'luas_lahan' => array(
+		'name'      => 'Data Luas Lahan',
+		'url'       => site_url('luas_lahan'),
+		'icon'      => 'fa fa-tree'
+	),
+
+
+
+
 	'berita' => array(
 		'name'      => 'Data Berita',
 		'url'       => site_url('berita'),
