@@ -304,4 +304,34 @@ class Komoditas_model extends CI_Model {
         return $query->result();
     }
 
+    function get_dataproduksi($bulan,$tahun)
+    {
+        $query = $this->db->query("SELECT *
+                                FROM
+                                tb_dataproduksi a, tb_kecamatan b
+                                WHERE
+                                b.`id_kecamatan` = a.`id_kecamatan`
+                                AND
+                                a.bulan = '$bulan'
+                                AND
+                                a.tahun = $tahun
+                                ");
+        return $query->result();
+    }
+
+    function get_luaslahan($bulan,$tahun)
+    {
+        $query = $this->db->query("SELECT *
+                                FROM
+                                tb_luaslahan a, tb_kecamatan b
+                                WHERE
+                                b.`id_kecamatan` = a.`id_kecamatan`
+                                AND
+                                a.bulan = '$bulan'
+                                AND
+                                a.tahun = $tahun
+                                ");
+        return $query->result();
+    }
+
 }

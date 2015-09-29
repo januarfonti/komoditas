@@ -33,6 +33,13 @@ $config['menu'] = array(
 		'url'       => site_url('tabel_harga_komoditas'),
 		'icon'      => 'fa fa-line-chart'
 	),
+
+	'data_produksi' => array(
+		'name'      => 'Data Produksi',
+		'url'       => site_url('data_produksi'),
+		'icon'      => 'fa fa-pie-chart'
+	),
+
 	'tentang' => array(
 		'name'      => 'Tentang Sikompa',
 		'url'       => site_url('tentang'),
