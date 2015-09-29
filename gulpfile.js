@@ -58,6 +58,7 @@ var paths = {
 			// switch to other bootswatch theme here, or use default bootstrap theme
 			folders.bower + 'bootstrap/dist/css/bootstrap.min.css',
 			folders.bower + 'font-awesome/css/font-awesome.css',
+			folders.bower + 'datatables/Buttons/css/buttons.dataTables.css',
 			folders.bower + 'roboto/roboto.css',
 
 			// (optional) custom files
@@ -73,6 +74,8 @@ var paths = {
 			folders.bower + 'jquery-migrate/jquery-migrate.js',
 			folders.bower + 'bootstrap/dist/js/bootstrap.js',
 			folders.bower + 'adminlte/dist/js/app.js',
+			folders.bower + 'datatables/Buttons/js/dataTables.buttons.js',
+			folders.bower + 'datatables/Buttons/js/buttons.html5.js',
 			folders.bower + 'adminlte/plugins/fastclick/fastclick.js',
             folders.bower + 'summernote/dist/summernote.js',
 			folders.js + 'backend.js',
