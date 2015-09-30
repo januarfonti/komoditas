@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 17, 2015 at 11:23 AM
+-- Generation Time: Sep 30, 2015 at 01:27 PM
 -- Server version: 5.6.25
 -- PHP Version: 5.6.11
 
@@ -28,13 +28,13 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `backend_users` (
   `id` int(11) unsigned NOT NULL,
-  `role` enum('admin','staff') NOT NULL DEFAULT 'staff',
+  `role` enum('admin','staff','staff-2','staff-3') NOT NULL DEFAULT 'staff',
   `username` varchar(100) NOT NULL,
   `password` varchar(255) NOT NULL,
   `full_name` varchar(50) DEFAULT NULL,
   `active` tinyint(1) unsigned DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `backend_users`
@@ -42,7 +42,8 @@ CREATE TABLE IF NOT EXISTS `backend_users` (
 
 INSERT INTO `backend_users` (`id`, `role`, `username`, `password`, `full_name`, `active`, `created_at`) VALUES
 (1, 'admin', 'admin', '$2y$10$5Ckk.kPJyZeJ368XvIfLC.Sns4MqOueMOASIqk0oGZB9zlQgIi34S', 'Administrator', 1, '2014-07-31 04:56:41'),
-(2, 'staff', 'staff', '$2y$10$uvx0ySA7s2GZDsKcrlv40.Wev5q9xkjVg.pirwZOH9n2K4lPrIOvC', 'Staff', 1, '2014-08-11 10:10:37');
+(3, 'admin', 'adminsikompa', '$2y$10$wjaM1i/vVwU.MSsO6NwZi..rpePreoNDeP6xySysquqLu/nDS57jC', 'Admin Sikompa', 1, '2015-09-18 06:38:51'),
+(4, 'staff-2', 'staff2', '$2y$10$CwpVN4rSvDdiUWvC5J3AYuzlmgsVvovXek47jjqSM2WypNTrP1IFW', 'Staff 2', 1, '2015-09-30 08:42:44');
 
 -- --------------------------------------------------------
 
@@ -98,6 +99,36 @@ INSERT INTO `tb_berita` (`id_berita`, `user`, `judul_berita`, `isi_berita`, `gam
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tb_dataproduksi`
+--
+
+CREATE TABLE IF NOT EXISTS `tb_dataproduksi` (
+  `id_dataproduksi` int(11) NOT NULL,
+  `id_kecamatan` int(11) DEFAULT NULL,
+  `bulan` varchar(15) DEFAULT NULL,
+  `tahun` int(11) DEFAULT NULL,
+  `produksi_padi` int(11) DEFAULT NULL,
+  `produksi_bawang_putih` int(11) DEFAULT NULL,
+  `produksi_jagung` int(11) DEFAULT NULL,
+  `produksi_kedelai` int(11) DEFAULT NULL,
+  `produksi_bawang_merah` int(11) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_dataproduksi`
+--
+
+INSERT INTO `tb_dataproduksi` (`id_dataproduksi`, `id_kecamatan`, `bulan`, `tahun`, `produksi_padi`, `produksi_bawang_putih`, `produksi_jagung`, `produksi_kedelai`, `produksi_bawang_merah`) VALUES
+(1, 2, 'Agustus', 2015, 50, 20, 60, 23, 50),
+(2, 3, 'Agustus', 2015, 32, 35, 87, 12, 54),
+(3, 1, 'Agustus', 2015, 24, 84, 20, 15, 29),
+(4, 2, 'September', 2015, 38, 29, 49, 10, 54),
+(5, 3, 'September', 2015, 23, 53, 23, 59, 19),
+(6, 1, 'September', 2015, 34, 18, 24, 28, 19);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tb_hargakomoditas`
 --
 
@@ -116,32 +147,32 @@ CREATE TABLE IF NOT EXISTS `tb_hargakomoditas` (
 --
 
 INSERT INTO `tb_hargakomoditas` (`id_komoditas`, `id_bahanpokok`, `id_jenisbahanpokok`, `id_pasar`, `satuan`, `tgl_update`, `harga`) VALUES
-(25, 5, 12, 2, 'Kg', '2015-09-09', 23000),
-(26, 5, 12, 1, 'Kg', '2015-09-09', 40000),
-(27, 5, 11, 2, 'Kg', '2015-09-09', 54000),
-(28, 5, 11, 1, 'Kg', '2015-09-09', 56000),
-(29, 1, 7, 2, 'Kg', '2015-09-09', 23000),
-(30, 1, 7, 1, 'Kg', '2015-09-09', 34000),
-(31, 1, 1, 2, 'Kg', '2015-09-09', 52000),
-(32, 1, 1, 1, 'Kg', '2015-09-09', 23400),
-(33, 1, 2, 2, 'Kg', '2015-09-09', 15000),
-(34, 1, 2, 1, 'Kg', '2015-09-09', 23000),
-(35, 4, 13, 2, 'Kg', '2015-09-09', 16000),
-(36, 4, 13, 1, 'Kg', '2015-09-09', 14000),
-(37, 4, 8, 2, 'Kg', '2015-09-09', 23100),
-(38, 4, 8, 1, 'Kg', '2015-09-09', 22500),
-(39, 2, 4, 2, 'Kg', '2015-09-09', 75000),
-(40, 2, 4, 1, 'Kg', '2015-09-09', 54000),
-(41, 2, 3, 2, 'Kg', '2015-09-09', 72000),
-(42, 2, 3, 1, 'Kg', '2015-09-09', 82000),
-(43, 6, 10, 2, 'Kg', '2015-09-09', 20000),
-(44, 6, 10, 1, 'Kg', '2015-09-09', 23000),
-(45, 6, 9, 2, 'Kg', '2015-09-09', 32000),
-(46, 6, 9, 1, 'Kg', '2015-09-09', 54200),
-(47, 3, 6, 2, 'Kg', '2015-09-09', 31000),
-(48, 3, 6, 1, 'Kg', '2015-09-09', 32200),
-(49, 3, 5, 2, 'Kg', '2015-09-09', 24000),
-(50, 3, 5, 1, 'Kg', '2015-09-09', 32100),
+(25, 5, 12, 2, 'Kg', '2015-09-08', 23000),
+(26, 5, 12, 1, 'Kg', '2015-09-08', 40000),
+(27, 5, 11, 2, 'Kg', '2015-09-08', 54000),
+(28, 5, 11, 1, 'Kg', '2015-09-08', 56000),
+(29, 1, 7, 2, 'Kg', '2015-09-08', 23000),
+(30, 1, 7, 1, 'Kg', '2015-09-08', 34000),
+(31, 1, 1, 2, 'Kg', '2015-09-08', 52000),
+(32, 1, 1, 1, 'Kg', '2015-09-08', 23400),
+(33, 1, 2, 2, 'Kg', '2015-09-08', 15000),
+(34, 1, 2, 1, 'Kg', '2015-09-08', 23000),
+(35, 4, 13, 2, 'Kg', '2015-09-08', 16000),
+(36, 4, 13, 1, 'Kg', '2015-09-08', 14000),
+(37, 4, 8, 2, 'Kg', '2015-09-08', 23100),
+(38, 4, 8, 1, 'Kg', '2015-09-08', 22500),
+(39, 2, 4, 2, 'Kg', '2015-09-08', 75000),
+(40, 2, 4, 1, 'Kg', '2015-09-08', 54000),
+(41, 2, 3, 2, 'Kg', '2015-09-08', 72000),
+(42, 2, 3, 1, 'Kg', '2015-09-08', 82000),
+(43, 6, 10, 2, 'Kg', '2015-09-08', 20000),
+(44, 6, 10, 1, 'Kg', '2015-09-08', 23000),
+(45, 6, 9, 2, 'Kg', '2015-09-08', 32000),
+(46, 6, 9, 1, 'Kg', '2015-09-08', 54200),
+(47, 3, 6, 2, 'Kg', '2015-09-08', 31000),
+(48, 3, 6, 1, 'Kg', '2015-09-08', 32200),
+(49, 3, 5, 2, 'Kg', '2015-09-08', 24000),
+(50, 3, 5, 1, 'Kg', '2015-09-08', 32100),
 (51, 5, 12, 2, 'Kg', '2015-09-10', 23000),
 (52, 5, 12, 1, 'Kg', '2015-09-10', 40000),
 (53, 5, 11, 2, 'Kg', '2015-09-10', 10000),
@@ -203,6 +234,62 @@ INSERT INTO `tb_jenisbahanpokok` (`id_jenisbahanpokok`, `nama_jenis_bahan_pokok`
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tb_kecamatan`
+--
+
+CREATE TABLE IF NOT EXISTS `tb_kecamatan` (
+  `id_kecamatan` int(11) NOT NULL,
+  `nama_kecamatan` varchar(50) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_kecamatan`
+--
+
+INSERT INTO `tb_kecamatan` (`id_kecamatan`, `nama_kecamatan`) VALUES
+(1, 'Lowokwaru'),
+(2, 'Blimbing'),
+(3, 'Klojen');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_kontak`
+--
+
+CREATE TABLE IF NOT EXISTS `tb_kontak` (
+  `id_kontak` int(11) NOT NULL,
+  `kontak` text NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_kontak`
+--
+
+INSERT INTO `tb_kontak` (`id_kontak`, `kontak`) VALUES
+(1, '<p>\r\n	Email</p>\r\n<p>\r\n	Alamat</p>\r\n<p>\r\n	Website</p>\r\n');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_luaslahan`
+--
+
+CREATE TABLE IF NOT EXISTS `tb_luaslahan` (
+  `id_luaslahan` int(11) NOT NULL,
+  `id_kecamatan` int(11) DEFAULT NULL,
+  `bulan` varchar(15) DEFAULT NULL,
+  `tahun` int(11) DEFAULT NULL,
+  `luas_lahan_padi` int(11) DEFAULT NULL,
+  `luas_lahan_bawang_putih` int(11) DEFAULT NULL,
+  `luas_lahan_jagung` int(11) DEFAULT NULL,
+  `luas_lahan_kedelai` int(11) DEFAULT NULL,
+  `luas_lahan_bawang_merah` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tb_pasar`
 --
 
@@ -219,8 +306,26 @@ CREATE TABLE IF NOT EXISTS `tb_pasar` (
 --
 
 INSERT INTO `tb_pasar` (`id_pasar`, `nama_pasar`, `alamat_pasar`, `biografi_pasar`, `foto_pasar`) VALUES
-(1, 'Pasar Dinoyo', 'Jalan MT Haryono', '<p>\r\n	Biografi</p>\r\n', '2910c-psr_590x300.jpg'),
+(1, 'Pasar Dinoyo', 'Jalan MT Haryono', '<div style="text-align: justify;">\r\n	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mi nulla, finibus sit amet mi in, venenatis dignissim ligula. Sed at quam eget ex sagittis placerat id id elit. Curabitur sem ipsum, placerat in diam sit amet, finibus ornare lacus. Nullam sodales lorem libero, at sagittis sem iaculis sit amet. Vestibulum maximus viverra nunc et gravida. Nunc mollis ipsum vel turpis consectetur aliquam. Duis euismod, velit nec varius pellentesque, tortor quam consectetur enim, vitae euismod quam elit at metus. Donec a pharetra magna, a tempor ante.</div>\r\n', '2910c-psr_590x300.jpg'),
 (2, 'Pasar Blimbing', 'Jalan Blimbing', '<p>\r\n	Karena banyak pohon blimbingnya</p>\r\n', 'cce8c-1.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_tentang`
+--
+
+CREATE TABLE IF NOT EXISTS `tb_tentang` (
+  `id_tentang` int(11) NOT NULL,
+  `tentang` text NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_tentang`
+--
+
+INSERT INTO `tb_tentang` (`id_tentang`, `tentang`) VALUES
+(1, '<p>\r\n	SIKOMPA adalah .......................</p>\r\n');
 
 -- --------------------------------------------------------
 
@@ -265,6 +370,12 @@ ALTER TABLE `tb_berita`
   ADD PRIMARY KEY (`id_berita`);
 
 --
+-- Indexes for table `tb_dataproduksi`
+--
+ALTER TABLE `tb_dataproduksi`
+  ADD PRIMARY KEY (`id_dataproduksi`);
+
+--
 -- Indexes for table `tb_hargakomoditas`
 --
 ALTER TABLE `tb_hargakomoditas`
@@ -277,10 +388,34 @@ ALTER TABLE `tb_jenisbahanpokok`
   ADD PRIMARY KEY (`id_jenisbahanpokok`);
 
 --
+-- Indexes for table `tb_kecamatan`
+--
+ALTER TABLE `tb_kecamatan`
+  ADD PRIMARY KEY (`id_kecamatan`);
+
+--
+-- Indexes for table `tb_kontak`
+--
+ALTER TABLE `tb_kontak`
+  ADD PRIMARY KEY (`id_kontak`);
+
+--
+-- Indexes for table `tb_luaslahan`
+--
+ALTER TABLE `tb_luaslahan`
+  ADD PRIMARY KEY (`id_luaslahan`);
+
+--
 -- Indexes for table `tb_pasar`
 --
 ALTER TABLE `tb_pasar`
   ADD PRIMARY KEY (`id_pasar`);
+
+--
+-- Indexes for table `tb_tentang`
+--
+ALTER TABLE `tb_tentang`
+  ADD PRIMARY KEY (`id_tentang`);
 
 --
 -- Indexes for table `users`
@@ -296,7 +431,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `backend_users`
 --
 ALTER TABLE `backend_users`
-  MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `tb_bahanpokok`
 --
@@ -308,6 +443,11 @@ ALTER TABLE `tb_bahanpokok`
 ALTER TABLE `tb_berita`
   MODIFY `id_berita` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 --
+-- AUTO_INCREMENT for table `tb_dataproduksi`
+--
+ALTER TABLE `tb_dataproduksi`
+  MODIFY `id_dataproduksi` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
 -- AUTO_INCREMENT for table `tb_hargakomoditas`
 --
 ALTER TABLE `tb_hargakomoditas`
@@ -318,10 +458,30 @@ ALTER TABLE `tb_hargakomoditas`
 ALTER TABLE `tb_jenisbahanpokok`
   MODIFY `id_jenisbahanpokok` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
 --
+-- AUTO_INCREMENT for table `tb_kecamatan`
+--
+ALTER TABLE `tb_kecamatan`
+  MODIFY `id_kecamatan` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `tb_kontak`
+--
+ALTER TABLE `tb_kontak`
+  MODIFY `id_kontak` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `tb_luaslahan`
+--
+ALTER TABLE `tb_luaslahan`
+  MODIFY `id_luaslahan` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `tb_pasar`
 --
 ALTER TABLE `tb_pasar`
   MODIFY `id_pasar` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `tb_tentang`
+--
+ALTER TABLE `tb_tentang`
+  MODIFY `id_tentang` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `users`
 --

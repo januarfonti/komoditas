@@ -18,7 +18,7 @@ class Login extends CI_Controller {
 			$user = $this->backend_users->get_by('username', $username);
 
 			// only admin and staff can login
-			if ( verify_role(['admin', 'staff'], $user) )
+			if ( verify_role(['admin', 'staff-1','staff-2','staff-3'], $user) )
 			{
 				// password correct
 				if ( verify_pw($password, $user['password']) )

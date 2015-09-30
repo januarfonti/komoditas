@@ -27,18 +27,20 @@ $config['menu'] = array(
 			
 		)
 	),
-	
-	'tabel_harga_komoditas' => array(
-		'name'      => 'Tabel Harga Komoditas',
-		'url'       => site_url('tabel_harga_komoditas'),
-		'icon'      => 'fa fa-line-chart'
-	),
 
-	'data_produksi' => array(
-		'name'      => 'Data Produksi',
-		'url'       => site_url('data_produksi'),
-		'icon'      => 'fa fa-pie-chart'
+	'tabel' => array(
+		'name'      => 'Tabel',
+		'url'       => site_url('tabel'),
+		'icon'      => 'fa fa-pie-chart',
+		'anak'  => array(
+			'Tabel Harga Komoditas'		=> site_url('tabel_harga_komoditas'),
+			'Data Produksi'		=> site_url('data_produksi'),
+			
+			
+		)
 	),
+	
+	
 
 	'tentang' => array(
 		'name'      => 'Tentang Sikompa',
