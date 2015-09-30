@@ -65,19 +65,13 @@
     <div role="tabpanel" class="tab-pane active" id="dataproduksi">
     	
     	<table id="data_produksi" class="table table-bordered table-hovered table-striped" cellspacing="0" cellpadding="0">
+    	<thead>
 			  <tr>
 			    <td width="20%" rowspan="3" class="text-center info">KELURAHAN</td>
 			    <td colspan="5"class="text-center success">
-			 		Tabel Data Produksi Bulan <?php echo $bulan." ".$tahun; ?>
+			 		Tabel Data Produksi Bulan <?php echo $bulan." ".$tahun; ?> (Satuan TON)
 			    </td>
 			  </tr>
-			  <tr class="success">
-			        <td colspan="1" align="center" >Padi</td>
-			        <td colspan="1" align="center" >Bawang Putih</td>
-			        <td colspan="1" align="center" >Jagung</td>
-			        <td colspan="1" align="center" >Kedelai</td>
-			        <td colspan="1" align="center" >Bawang Merah</td>
-			        </tr>
 			  <tr class="warning">
 			  	    <td align="center">PRODUKSI</td>
 			        <td align="center">PRODUKSI</td>
@@ -85,6 +79,16 @@
 			        <td align="center">PRODUKSI</td>
 			        <td align="center">PRODUKSI</td>
 			        </tr>
+			  <tr class="warning">
+			        <td colspan="1" align="center" >Padi</td>
+			        <td colspan="1" align="center" >Bawang Putih</td>
+			        <td colspan="1" align="center" >Jagung</td>
+			        <td colspan="1" align="center" >Kedelai</td>
+			        <td colspan="1" align="center" >Bawang Merah</td>
+			        </tr>
+			  
+			    </thead>
+			    <tbody>
 			    	<?php if (isset($data_produksi)) { foreach ($data_produksi as $row) { ?>
 			    	<tr>
 				    	<td><?php echo $row->nama_kecamatan; ?></td>
@@ -95,26 +99,20 @@
 				        <td><?php echo $row->produksi_bawang_merah; ?></td>
 			        </tr>
 			        <?php } } ?>
-			 
+			 </tbody>
 			  
 			</table>
     </div>
     <div role="tabpanel" class="tab-pane" id="luaslahan">
     	
-    	<table class="table table-bordered table-hovered table-striped" cellspacing="0" cellpadding="0">
+    	<table id="luas_lahan" class="table table-bordered table-hovered table-striped" cellspacing="0" cellpadding="0">
+    	<thead>
 			  <tr>
 			    <td width="20%" rowspan="3" class="text-center info">KELURAHAN</td>
 			    <td colspan="5"class="text-center success">
-			 		Tabel Luas Lahan Bulan <?php echo $bulan." ".$tahun; ?>
+			 		Tabel Luas Lahan Bulan <?php echo $bulan." ".$tahun; ?> (HEKTAR)
 			    </td>
 			  </tr>
-			  <tr class="success">
-			        <td colspan="1" align="center" >Padi</td>
-			        <td colspan="1" align="center" >Bawang Putih</td>
-			        <td colspan="1" align="center" >Jagung</td>
-			        <td colspan="1" align="center" >Kedelai</td>
-			        <td colspan="1" align="center" >Bawang Merah</td>
-			        </tr>
 			  <tr class="warning">
 			  	    <td align="center">LUAS</td>
 			        <td align="center">LUAS</td>
@@ -122,6 +120,17 @@
 			        <td align="center">LUAS</td>
 			        <td align="center">LUAS</td>
 			        </tr>
+			  <tr class="success">
+			        <td colspan="1" align="center" >Padi</td>
+			        <td colspan="1" align="center" >Bawang Putih</td>
+			        <td colspan="1" align="center" >Jagung</td>
+			        <td colspan="1" align="center" >Kedelai</td>
+			        <td colspan="1" align="center" >Bawang Merah</td>
+			        </tr>
+			  
+
+			        </thead>
+			        <tbody>
 			    	<?php if (isset($data_luaslahan)) { foreach ($data_luaslahan as $row) { ?>
 			    	<tr>
 				    	<td><?php echo $row->nama_kecamatan; ?></td>
@@ -133,7 +142,7 @@
 			        </tr>
 			        <?php } } ?>
 			 
-			  
+			  </tbody>
 			</table>
 
     </div>
@@ -148,6 +157,17 @@
 
 <script>
 $('#data_produksi').DataTable( {
+    dom: 'Bfrtip',
+    "bFilter": false,
+    "iDisplayLength": 15,
+    buttons: [
+        'copy', 'excel', 'pdf'
+    ]
+} );
+</script>
+
+<script>
+$('#luas_lahan').DataTable( {
     dom: 'Bfrtip',
     "bFilter": false,
     "iDisplayLength": 15,
